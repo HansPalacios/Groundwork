@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Groundwork Detailing</title>
+	<link rel="icon"
+	      type="img/png"
+	      href="/icon.png">
+	<%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag :modernizr %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://fonts.googleapis.com/css?family=Holtwood+One+SC|Jomhuria|Lateef|Mate+SC|Rationale|Shrikhand|Cinzel|Forum|Playfair+Display+SC" rel="stylesheet">
+</head>
+<body>
+<header>
+	<h1>Groundwork Detailing</h1>
+	
+</header>
+<nav>
+	<ul>
+		<li><a class="list" href="/">Home</a></li>
+		<li><a class="list" href="/locations">Locations</a></li>
+			<li><a class="list" href="/pricing">Pricing</a></li>
+		<li><a class="list" href="/calendar">Book Appointment</a></li>
+		<li><a class="list" href="/reviews">Reviews</a></li>
+		<li><a class="list" href="/about">About</a></li>
+	</ul>
+</nav>
+<%= yield %>
+<footer>
+	<h5>Manchester, CT</h5>
+	<a href="https://www.facebook.com/groundworkdetailing/"><%= image_tag("facebook.png", :alt => "rss feed", :id => "facebook") %></a>
+	<a href="https://www.instagram.com/groundworkdetailing/"><%= image_tag("instagram.png", :alt => "rss feed", :id => "instagram") %></a>
+</footer>
+<%= javascript_include_tag :application %>
+</body>
+</html>

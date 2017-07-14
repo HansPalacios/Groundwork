@@ -1,0 +1,34 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.list {
+	color: white;
+	text-decoration-color: none;
+	text-decoration-line: none;
+	margin: 20px;
+}
+#gallery {
+	width:  100%;
+	height: 400px;
+	display: block;
+	margin: 50px 100px 100px 30px;
+	padding: 10px;
+}
+.galleryheading {
+	margin: 0 auto;
+	font-size: 20px;
+	text-align: center;
+}
+
+.mySlides {
+	display: none;
+	max-height: 350px;
+	margin-top: 50px;
+	width: 700px;
+    margin: 0 auto;
+}
+
+
+
+
