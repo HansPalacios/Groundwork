@@ -1,0 +1,27 @@
+<%= form_with(model: detailer, local: true) do |form| %>
+  <% if detailer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(detailer.errors.count, "error") %> prohibited this detailer from being saved:</h2>
+
+      <ul>
+      <% detailer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :fname %>
+    <%= form.text_field :fname, id: :detailer_fname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lname %>
+    <%= form.text_field :lname, id: :detailer_lname %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

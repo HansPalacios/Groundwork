@@ -1,5 +1,9 @@
-body, html {
+a:visited {
+	color: whte;
+}
+html {
     height: 100%;
+  	box-sizing: border-box;
 }
 body {
 	background-image: image-url('/assets/IMG_3350.JPG');
@@ -7,88 +11,93 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+	padding: 0;
+	width: 100%;
 }
 * {
 	padding: 0;
 	margin: 0;
 }
+.container {
+	min-width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+	left: 0;
+	right: 0;
+}
 header {
-/*	position: fixed;
-*/	display: block;
-	width: 100%;
 	height: 150px;
 	background-color: rgba(29,29,29,.7);
 	padding-bottom: 0;
 	margin-top: 50px;
-}
-h1 {
-	float: left;
-	width: 100px;
-	height: 50px;
+	right: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	h1 {
+	width: 400px;
+	height: 30px;
 	color: white;
 	font-family: 'Playfair Display SC', serif;
 	margin: 10px 300px;
 	margin-bottom: 0;
 	font-size: 30px;
-}
-h2 {
-	color: white;
-}
-header #monthly {
-	float: right;
-	display: inline-block;
-	height: 80%;
-	border: 1px solid maroon;
-	margin: 10px 100px;
-	width: 176px;
-}
-
-nav {
-/*	position:fixed;
-*/	display:block;
-	background-color: rgba(29,29,29,.7);
-	opacity: 50%;
-	width: 100%;
-	height: 40px;
-	margin-top: 0;
-	padding-top: 0;
-	top: 150px;
-	padding-left: 200px;
-}
-nav ul {
-	margin: 0;
-	list-style-type: none;
-}
-li {
-	margin-top: 10px;
-	display: inline;
-	float: left;
+	}
+	nav {
+		opacity: 50%;
+		height: 50px;
+		margin-top: 80px;
+	}
+	nav ul {
+		margin: 0;
+		list-style-type: none;
+		color: white;
+		margin-left: 100px;
+	}
+	li {
+		margin-top: 10px;
+		display: inline;
+	}
 }
 footer {
 	background-color: rgba(29,29,29,.7);
 	font-color: black;
 	width: 100%;
+	height: 80px;
 	text-align: center;
 	padding: 50px;
 	margin-bottom: 0;
-	height: 180px;
-
-}
-footer #facebook {
-	float: right;
-	display: inline-block;
+	position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  margin-bottom: 0;
+  display: block;
+	#facebook {
 	width: 20px;
-	right: 20px;
-	margin: 20px 20px 20px 5px;
 	border-radius: 10%;
-}
-footer #instagram {
-	float: right;
-	display: inline-block;
+	margin: 20px;
+	}
+	#instagram {
 	width: 20px;
-	margin: 20px 10px 20px 5px;
 	border-radius: 10%;
-}
-footer h5 {
+	margin: 20px;
+	}
+	h5 {
 	color: white;
+	}
+}
+
+h2 {
+	color: white;
+}
+ .field {
+	margin: 0 auto;
+	padding-left: 40%;
 }

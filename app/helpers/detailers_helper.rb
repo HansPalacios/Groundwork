@@ -1,0 +1,2 @@
+module DetailersHelper
+end

@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Plans</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Plan name</th>
+      <th>Price</th>
+      <th>Headlight restoration</th>
+      <th>Wax</th>
+      <th>Tires</th>
+      <th>Steam carpets</th>
+      <th>Vacuum</th>
+      <th>Apt time</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @plans.each do |plan| %>
+      <tr>
+        <td><%= plan.plan_name %></td>
+        <td><%= plan.price %></td>
+        <td><%= plan.headlight_restoration %></td>
+        <td><%= plan.wax %></td>
+        <td><%= plan.tires %></td>
+        <td><%= plan.steam_carpets %></td>
+        <td><%= plan.vacuum %></td>
+        <td><%= plan.apt_time %></td>
+        <td><%= link_to 'Show', plan %></td>
+        <td><%= link_to 'Edit', edit_plan_path(plan) %></td>
+        <td><%= link_to 'Destroy', plan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Plan', new_plan_path %>

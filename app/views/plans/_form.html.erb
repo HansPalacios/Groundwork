@@ -1,0 +1,57 @@
+<%= form_with(model: plan, local: true) do |form| %>
+  <% if plan.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(plan.errors.count, "error") %> prohibited this plan from being saved:</h2>
+
+      <ul>
+      <% plan.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :plan_name %>
+    <%= form.text_field :plan_name, id: :plan_plan_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.number_field :price, id: :plan_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :headlight_restoration %>
+    <%= form.check_box :headlight_restoration, id: :plan_headlight_restoration %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wax %>
+    <%= form.check_box :wax, id: :plan_wax %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tires %>
+    <%= form.check_box :tires, id: :plan_tires %>
+  </div>
+
+  <div class="field">
+    <%= form.label :steam_carpets %>
+    <%= form.check_box :steam_carpets, id: :plan_steam_carpets %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vacuum %>
+    <%= form.check_box :vacuum, id: :plan_vacuum %>
+  </div>
+
+  <div class="field">
+    <%= form.label :apt_time %>
+    <%= form.text_field :apt_time, id: :plan_apt_time %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
