@@ -11,12 +11,11 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap-grid.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link href="https://fonts.googleapis.com/css?family=Holtwood+One+SC|Jomhuria|Lateef|Mate+SC|Rationale|Shrikhand|Cinzel|Forum|Playfair+Display+SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel|Forum|Playfair+Display+SC" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-	<div class="row">
-		<header>
+	<header>
+		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<h1>Groundwork Detailing</h1>
@@ -36,25 +35,26 @@
 					</nav>
 				</div>
 			</div>
-		</header>
-	</div>
-</div>
-<div class="container">
-<%= yield %>
-</div>
-<div class="container">
-		<footer class="row">
-			<div class="col-md-4">
+		</div>
+	</header>
+	
+	<%= yield %>
+
+	<footer>
+		<div class="container">	
+			<div class="row">
+				<div class="col-md-4">
+				</div>
+				<div class="col-md-4">
+					<h5>Manchester, CT</h5>
+				</div>
+				<div class="col-md-4">
+					<a href="https://www.facebook.com/groundworkdetailing/"><%= image_tag("facebook.png", :alt => "rss feed", :id => "facebook") %></a>
+					<a href="https://www.instagram.com/groundworkdetailing/"><%= image_tag("instagram.png", :alt => "rss feed", :id => "instagram") %></a>
+				</div>
 			</div>
-			<div class="col-md-4">
-			<h5>Manchester, CT</h5>
-			</div>
-			<div class="col-md-4">
-			<a href="https://www.facebook.com/groundworkdetailing/"><%= image_tag("facebook.png", :alt => "rss feed", :id => "facebook") %></a>
-			<a href="https://www.instagram.com/groundworkdetailing/"><%= image_tag("instagram.png", :alt => "rss feed", :id => "instagram") %></a>
-			</div>
-		</footer>
-</div>
+		</div>
+	</footer>
 <%= javascript_include_tag :application %>
 </body>
 </html>
