@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Groundwork Detailing</title>
-	<link rel="icon"
-	      type="img/png"
-	      href="/icon.png">
-	<%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag :modernizr %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap-grid.css">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link href="https://fonts.googleapis.com/css?family=Cinzel|Forum|Playfair+Display+SC" rel="stylesheet">
-</head>
-<body>
-	<header>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h1>Groundwork Detailing</h1>
+	<head>
+		<title>Groundwork Detailing</title>
+		<link rel="icon"
+		      type="img/png"
+		      href="/icon.png">
+		<%= csrf_meta_tags %>
+	    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	    <%= javascript_include_tag :modernizr %>
+	    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap-grid.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link href="https://fonts.googleapis.com/css?family=Cinzel|Forum|Playfair+Display+SC" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+					<%= link_to root_path do %>
+						<h1>Groundwork Detailing</h1>
+					<% end %>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<nav>
+							<ul>
+								<li><a class="list" href="/">Home</a></li>
+								<li><a class="list" href="/pricing">Pricing</a></li>
+								<li><a class="list" href="/appointments">Calendar</a></li>
+								<li><a class="list" href="/reviews">Reviews</a></li>
+								<li><a class="list" href="/about">About</a></li>
+							</ul>
+						</nav>
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<nav>
-						<ul>
-							<li><a class="list" href="/">Home</a></li>
-							<li><a class="list" href="/locations">Locations</a></li>
-							<li><a class="list" href="/pricing">Pricing</a></li>
-							<li><a class="list" href="/appointments">Book Appointment</a></li>
-							<li><a class="list" href="/reviews">Reviews</a></li>
-							<li><a class="list" href="/about">About</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
+		</header>
+		
+		<div class="container-fluid">
+			<%= yield %>
 		</div>
-	</header>
-	
-	<%= yield %>
 
-	<footer>
-		<div class="container">	
+
+		<div class="footer container-fluid">	
 			<div class="row">
 				<div class="col-md-4">
 				</div>
@@ -49,12 +52,13 @@
 					<h5>Manchester, CT</h5>
 				</div>
 				<div class="col-md-4">
-					<a href="https://www.facebook.com/groundworkdetailing/"><%= image_tag("facebook.png", :alt => "rss feed", :id => "facebook") %></a>
-					<a href="https://www.instagram.com/groundworkdetailing/"><%= image_tag("instagram.png", :alt => "rss feed", :id => "instagram") %></a>
+					<a href="https://www.facebook.com/groundworkdetailing/"><%= image_tag("bwfb.png", :alt => "rss feed", :id => "facebook") %></a>
+					<a href="https://www.instagram.com/groundworkdetailing/"><%= image_tag("bwinsta.png", :alt => "rss feed", :id => "instagram") %></a>
+					<a href="https://www.twitter.com/groundworkdetailing/"><%= image_tag("bwtwitter.png", :alt => "rss feed", :id => "instagram") %></a>
 				</div>
 			</div>
 		</div>
-	</footer>
-<%= javascript_include_tag :application %>
-</body>
+
+		<%= javascript_include_tag :application %>
+	</body>
 </html>
