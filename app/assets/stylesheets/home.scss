@@ -8,19 +8,28 @@
 	text-align: center;
 	#homeright {
 		background-color: black;
+		.row {
+			text-align: center;
+			padding: 0 20%;
+			a {
+				margin: 0 auto;
+			}
+			.medialink {
+				width: 30px;
+				margin: 60%;
+			}
+		}
 	}
 	h3 {
 		margin: 50px auto;
 	}
 	h4 em {
-		// background-color: rgba(234,234,234,.2);
 		width: 300px;
 		margin: 0 auto;
 	}
 	.services {
 		margin: 20px auto;
 		background-color: rgba(187,187,187,.68);
-		color: black;
 		max-width: 440px;
 		.rotate {
 				-ms-transform: rotate(-90deg);
@@ -28,8 +37,9 @@
 				transform: rotate(-90deg);
 				height: 20px;
 				position: absolute;
-				top: 380px;
+				top: 395px;
 				font-weight: 900;
+				color: black;
 			}
 		ul {
 			margin-top: 10px;
@@ -37,10 +47,14 @@
 			margin-left: 100px;
 			list-style-type: none;
 			li h4{
+				color: black;
 				font-size: 18px;
 				text-align: left;
-				margin: 10px 0;
+				margin: 0;
 			}
+		}
+		h5 {
+			color: black;
 		}
 	}
 	.button {
@@ -49,6 +63,7 @@
 		width: 400px;
 		text-align: center;
 		background-color: rgba(45,45,45,.6);
+		padding: 10px;
 		h3 {
 			margin: 0;
 		}
@@ -58,7 +73,7 @@
 #gallery {
 	width:  90%;
 	height: 219px;
-	margin: 50px auto;
+	margin: 20px auto;
 }
 .galleryheading {
 	margin: 0 auto;
