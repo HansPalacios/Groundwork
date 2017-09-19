@@ -15,22 +15,24 @@
 	  
 	</head>
 	<body>
-		<header>
-			<div class="container-fluid">
-				<div class="row">
-					<a id="h1" href="/">Groundwork Detailing</a>
+		<header class="container-fluid">
+			<div class="row">
+				<a id="h1" href="/">Groundwork Detailing</a>
+				<div id="messages">
+					<p class="notice"><%= notice %></p>
+     			<p class="alert"><%= alert %></p>
 				</div>
-				<div class="row">
-						<nav>
-							<ul>
-								<li><a class="list" href="/">Home</a></li>
-								<li><a class="list" href="/pricing">Pricing</a></li>
-								<!-- <li><a class="list" href="/appointments">Calendar</a></li> -->
-								<li><a class="list" href="/reviews">Reviews</a></li>
-								<li><a class="list" href="/about">About</a></li>
-							</ul>
-						</nav>
-				</div>
+			</div>
+			<div class="row">
+					<nav>
+						<ul>
+							<li><a class="list" href="/">Home</a></li>
+							<li><a class="list" href="/pricing">Pricing</a></li>
+							<!-- <li><a class="list" href="/appointments">Calendar</a></li> -->
+							<li><a class="list" href="/reviews">Reviews</a></li>
+							<li><a class="list" href="/about">Our Mission</a></li>
+						</ul>
+					</nav>
 			</div>
 		</header>
 		
@@ -39,8 +41,8 @@
 		</div>
 
 
-		<div class="container-fluid">	
-			<footer class="row">
+		<footer class="container-fluid">	
+			<div class="row">
 				<div class="col-md-4">
 					<a href="https://www.facebook.com/groundworkdetailing/" target="_blank"/><%= image_tag("bwfb.png", :alt => "rss feed") %></a>
 					<a href="https://www.instagram.com/groundworkdetailing/" target="_blank"/><%= image_tag("bwinsta.png", :alt => "rss feed") %></a>
@@ -53,8 +55,8 @@
 					<h5>Website developed by</h5>
 					<a href="https://www.hspalacios.com" target="_blank" >Hans Palacios</a>
 				</div>
-			</footer>
-		</div>
+			</div>
+		</footer>
 
 		<%= javascript_include_tag :application %>
 	</body>
