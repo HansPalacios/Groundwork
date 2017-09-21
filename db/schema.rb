@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 20170918213721) do
   create_table "reviews", force: :cascade do |t|
     t.string "name"
     t.string "email"
+    t.integer "rating"
     t.text "content"
     t.datetime "timestamp"
     t.boolean "reviewed"

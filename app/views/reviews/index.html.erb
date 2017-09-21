@@ -3,52 +3,86 @@
 		<div class="row">
 			<h4>Reviews</h4>
 		</div>
+		<hr>
 		<div class="row">
-			<h5>New Review</h5>
-				<div class="col-md-12">
-	        <%= form_for :review, url: reviews_path do |form| %>
-	          <% if @review && @review.errors.any? %>
-	            <div id="error_explanation">
-	              <h2><%= pluralize(@review.errors.count, "error") %> prohibited this review from being saved:</h2>
-	              <ul>
-	              <% @review.errors.full_messages.each do |message| %>
-	                <li><%= message %></li>
-	              <% end %>
-	              </ul>
-	            </div>
-	          <% end %>
-	          <div class="row field">
-	            <%= form.text_field :name, :placeholder => 'Name' %>
-	          </div>
-	           <div class="row field">
-	            <%= form.text_field :email, :placeholder => 'Email' %>
-	          </div>
-	          <div class="row field">
-	            <%= form.text_area :text, :placeholder => 'Your review content', :id => "editreviewtext"  %>
-	          </div>
-	          <div class="col-md-2 actions">
-	            <%= form.submit %>
-	          </div>
-	        <% end %>
-	      </div>
+			<div class="col-md-2"></div>
+			<div class="col-md-4">
+				<h5>New Review</h5>
+        <%= form_for :review, url: reviews_path do |form| %>
+          <% if @review && @review.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(@review.errors.count, "error") %> prohibited this review from being saved:</h2>
+              <ul>
+              <% @review.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+              </ul>
+            </div>
+          <% end %>
+          <div class="rating" data-default="<%=  @review ? @review.rating : 0 %>">
+						<%= link_to reviews_path(@review, 1), remote: true do 
+							tag.div :class => "star1" 
+							end %>
+						<%= link_to reviews_path(@review, 2), remote: true do 
+							tag.div :class => "star2" 
+							end %>
+						<%= link_to reviews_path(@review, 3), remote: true do 
+							tag.div :class => "star3" 
+							end %>
+						<%= link_to reviews_path(@review, 4), remote: true do 
+							tag.div :class => "star4" 
+							end %>
+						<%= link_to reviews_path(@review, 5), remote: true do 
+							tag.div :class => "star5" 
+							end %>
+					</div>
+          <div class="row field">
+            <%= form.text_field :name, :placeholder => 'Name' %>
+          </div>
+           <div class="row field">
+            <%= form.text_field :email, :placeholder => 'Email' %>
+          </div>
+          <div class="row field">
+            <%= form.text_area :content, :placeholder => 'Your review content' %>
+          </div>
+          <div class="actions">
+            <%= form.submit %>
+          </div>
+        <% end %>
+      </div>
+      <div class="col-md-4">
+      	<h6>If you have any questions, concerns, or complaints, please call us at <br><em>(860) 268-4920</em><br> or email us at <br><em> groundworkdetailing@yahoo.com </em><br> and we will work with you to resolve it to the best of our ability.<h6>
+      </div>
+			<div class="col-md-2"></div>
 		</div>
+		<hr>
 		<div class="row">
 	    <% @reviews.each do |review| %>
 	   		<div class="eachreview">
-	        <p class="row">
-		        <%= review.content %>
-	        </p>
+	   			<div class="row">
+	   				<div class="col-md-6">
+	   					<% if review.rating? %>
+	   						<div style="width:<%= 23 * review.rating %>px" id="stars"></div>
+	   					<% else %>
+	   						<div style="width:115px" id="stars"></div>
+	   					<% end %>
+	   				</div>
+	   				<div class="col-md-6">
+	   					<p><%= distance_of_time_in_words(Time.now, review.created_at, options = {})%> ago</p>
+	   				</div>
+	   			</div>
+	   			<hr>
+	   			<div class="row">
+	        	<p><%= review.content %></p>
+	        </div>
 	        <h5 class="row">
 		        -<%= review.name %>
 	        </h5>
-	        <p class="row">
-		        <%= review.timestamp %>
-	        </p>
 	        <div class="row">
 	        	<div class="links">
 			        <%= link_to 'Show', review %>
 			        <%= link_to 'Edit', edit_review_path(review) %>
-			        <%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %>
+			        <%= link_to 'Delete', review, method: :delete, data: { confirm: 'Are you sure?' } %>
 			      </div>
 	        </div>
 	      </div>

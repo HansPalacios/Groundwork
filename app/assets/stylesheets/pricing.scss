@@ -2,21 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #pricing {
+	margin-bottom: 100px;
+	margin-top: 50px;
+	text-align: center;
+	// background-color: rgba(0,0,0,.9);
+	padding: 50px 0;
 	h2, h3, h4, h5, h6, p, li {
 	font-family: 'Forum', cursive;
 	color: black;
 	text-align: center;
 	}
-	margin-bottom: 100px;
-	margin-top: 50px;
-	text-align: center;
-	background-color: rgba(0,0,0,.9);
-	padding: 50px 0;
 	.row {
 		text-align: center;
 	}
 	.pricebox {
-		background-color: rgba(234,234,234,.6);
+	background-color: rgba(169,169,169,.95);
 		margin: 20px;
 		padding: 30px;
 	}
