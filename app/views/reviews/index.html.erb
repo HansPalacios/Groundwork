@@ -19,7 +19,7 @@
               </ul>
             </div>
           <% end %>
-          <div class="rating" data-default="<%=  @review ? @review.rating : 0 %>">
+         <!--  <div class="rating" data-default="<%=  @review ? @review.rating : 0 %>">
 						<%= link_to reviews_path(@review, 1), remote: true do 
 							tag.div :class => "star1" 
 							end %>
@@ -35,7 +35,7 @@
 						<%= link_to reviews_path(@review, 5), remote: true do 
 							tag.div :class => "star5" 
 							end %>
-					</div>
+					</div> -->
           <div class="row field">
             <%= form.text_field :name, :placeholder => 'Name' %>
           </div>
@@ -61,14 +61,14 @@
 	   		<div class="eachreview">
 	   			<div class="row">
 	   				<div class="col-md-6">
+	   					<p><%= distance_of_time_in_words(Time.now, review.created_at, options = {})%> ago</p>
+	   				</div>
+	   				<div class="col-md-6">
 	   					<% if review.rating? %>
 	   						<div style="width:<%= 23 * review.rating %>px" id="stars"></div>
 	   					<% else %>
 	   						<div style="width:115px" id="stars"></div>
 	   					<% end %>
-	   				</div>
-	   				<div class="col-md-6">
-	   					<p><%= distance_of_time_in_words(Time.now, review.created_at, options = {})%> ago</p>
 	   				</div>
 	   			</div>
 	   			<hr>
@@ -78,13 +78,20 @@
 	        <h5 class="row">
 		        -<%= review.name %>
 	        </h5>
-	        <div class="row">
-	        	<div class="links">
-			        <%= link_to 'Show', review %>
-			        <%= link_to 'Edit', edit_review_path(review) %>
-			        <%= link_to 'Delete', review, method: :delete, data: { confirm: 'Are you sure?' } %>
-			      </div>
-	        </div>
+	        <% if user_signed_in? && current_user.admin? %>
+		        <div class="row">
+		        	<hr>
+		        	Email: <%= review.email %>
+		        	<hr>
+		        </div>
+		        <div class="row">
+		        	<div class="links">
+				        <%= link_to 'Show', review %>
+				        <%= link_to 'Edit', edit_review_path(review) %>
+				        <%= link_to 'Delete', review, method: :delete, data: { confirm: 'Are you sure?' } %>
+				      </div>
+		        </div>
+		      <% end %>
 	      </div>
 	    <% end %>
 	  </div>

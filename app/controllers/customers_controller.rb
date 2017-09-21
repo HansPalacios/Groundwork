@@ -4,26 +4,51 @@ class CustomersController < ApplicationController
   # GET /customers
   # GET /customers.json
   def index
+    unless user_signed_in? && current_user.admin?
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     @customers = Customer.all
   end
 
   # GET /customers/1
   # GET /customers/1.json
   def show
+    unless user_signed_in? && current_user.admin?
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
   end
 
   # GET /customers/new
   def new
+    unless user_signed_in? && current_user.admin?
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     @customer = Customer.new
   end
 
   # GET /customers/1/edit
   def edit
+    unless user_signed_in? && current_user.admin?
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
   end
 
   # POST /customers
   # POST /customers.json
   def create
+    unless user_signed_in? && current_user.admin?
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     @customer = Customer.new(customer_params)
 
     respond_to do |format|
@@ -40,6 +65,11 @@ class CustomersController < ApplicationController
   # PATCH/PUT /customers/1
   # PATCH/PUT /customers/1.json
   def update
+    unless user_signed_in? && current_user.admin?
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     respond_to do |format|
       if @customer.update(customer_params)
         format.html { redirect_to @customer, notice: 'Customer was successfully updated.' }
@@ -54,6 +84,11 @@ class CustomersController < ApplicationController
   # DELETE /customers/1
   # DELETE /customers/1.json
   def destroy
+    unless user_signed_in? && current_user.admin?
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     @customer.destroy
     respond_to do |format|
       format.html { redirect_to customers_url, notice: 'Customer was successfully destroyed.' }

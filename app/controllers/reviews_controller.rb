@@ -10,15 +10,26 @@ class ReviewsController < ApplicationController
   # GET /reviews/1
   # GET /reviews/1.json
   def show
+    unless user_signed_in? && current_user.admin?
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
   end
 
   # GET /reviews/new
   def new
+
     @review = Review.new
   end
 
   # GET /reviews/1/edit
   def edit
+    unless user_signed_in? && current_user.admin?
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
   end
 
   # POST /reviews
@@ -28,10 +39,10 @@ class ReviewsController < ApplicationController
 
     respond_to do |format|
       if @review.save
-        format.html { redirect_to @review, notice: 'Review was successfully created.' }
-        format.json { render :show, status: :created, location: @review }
+        format.html { redirect_to reviews_path, notice: 'Review was successfully created.' }
+        format.json { render :index, status: :created, location: @review }
       else
-        format.html { render :new }
+        format.html { render :index }
         format.json { render json: @review.errors, status: :unprocessable_entity }
       end
     end
@@ -40,6 +51,11 @@ class ReviewsController < ApplicationController
   # PATCH/PUT /reviews/1
   # PATCH/PUT /reviews/1.json
   def update
+    unless user_signed_in? && current_user.admin?
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     respond_to do |format|
       if @review.update(review_params)
         format.html { redirect_to @review, notice: 'Review was successfully updated.' }
@@ -54,6 +70,11 @@ class ReviewsController < ApplicationController
   # DELETE /reviews/1
   # DELETE /reviews/1.json
   def destroy
+    unless user_signed_in? && current_user.admin?
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     @review.destroy
     respond_to do |format|
       format.html { redirect_to reviews_url, notice: 'Review was successfully destroyed.' }

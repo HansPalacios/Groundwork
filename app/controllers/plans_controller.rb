@@ -4,26 +4,51 @@ class PlansController < ApplicationController
   # GET /plans
   # GET /plans.json
   def index
+    unless user_signed_in? && current_user.admin?
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     @plans = Plan.all
   end
 
   # GET /plans/1
   # GET /plans/1.json
   def show
+    unless user_signed_in? && current_user.admin?
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
   end
 
   # GET /plans/new
   def new
+    unless user_signed_in? && current_user.admin?
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     @plan = Plan.new
   end
 
   # GET /plans/1/edit
   def edit
+    unless user_signed_in? && current_user.admin?
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
   end
 
   # POST /plans
   # POST /plans.json
   def create
+    unless user_signed_in? && current_user.admin?
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     @plan = Plan.new(plan_params)
 
     respond_to do |format|
@@ -40,6 +65,11 @@ class PlansController < ApplicationController
   # PATCH/PUT /plans/1
   # PATCH/PUT /plans/1.json
   def update
+    unless user_signed_in? && current_user.admin?
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     respond_to do |format|
       if @plan.update(plan_params)
         format.html { redirect_to @plan, notice: 'Plan was successfully updated.' }
@@ -54,6 +84,11 @@ class PlansController < ApplicationController
   # DELETE /plans/1
   # DELETE /plans/1.json
   def destroy
+    unless user_signed_in? && current_user.admin?
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     @plan.destroy
     respond_to do |format|
       format.html { redirect_to plans_url, notice: 'Plan was successfully destroyed.' }

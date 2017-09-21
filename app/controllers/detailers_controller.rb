@@ -4,26 +4,51 @@ class DetailersController < ApplicationController
   # GET /detailers
   # GET /detailers.json
   def index
+    unless user_signed_in? && current_user.admin?
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     @detailers = Detailer.all
   end
 
   # GET /detailers/1
   # GET /detailers/1.json
   def show
+    unless user_signed_in? && current_user.admin?
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
   end
 
   # GET /detailers/new
   def new
+    unless user_signed_in? && current_user.admin?
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     @detailer = Detailer.new
   end
 
   # GET /detailers/1/edit
   def edit
+    unless user_signed_in? && current_user.admin?
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
   end
 
   # POST /detailers
   # POST /detailers.json
   def create
+    unless user_signed_in? && current_user.admin?
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     @detailer = Detailer.new(detailer_params)
 
     respond_to do |format|
@@ -40,6 +65,11 @@ class DetailersController < ApplicationController
   # PATCH/PUT /detailers/1
   # PATCH/PUT /detailers/1.json
   def update
+    unless user_signed_in? && current_user.admin?
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     respond_to do |format|
       if @detailer.update(detailer_params)
         format.html { redirect_to @detailer, notice: 'Detailer was successfully updated.' }
@@ -54,6 +84,11 @@ class DetailersController < ApplicationController
   # DELETE /detailers/1
   # DELETE /detailers/1.json
   def destroy
+    unless user_signed_in? && current_user.admin?
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     @detailer.destroy
     respond_to do |format|
       format.html { redirect_to detailers_url, notice: 'Detailer was successfully destroyed.' }
