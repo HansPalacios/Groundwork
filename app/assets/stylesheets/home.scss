@@ -4,10 +4,13 @@
 #homepage {
 	height: 600px;
 	margin: 5%;
-	background-color: rgba(175,175,175,.9);
+	background-color: rgba(31,31,31,.9);
 	text-align: center;
+	p, h2, h3, a, h4, h5, li {
+		color: white;
+	}
 	#homeright {
-		background-color: rgba(138,138,138,.6);
+		background-color: rgba(0,0,0,1);
 		.row {
 			text-align: center;
 			a {
@@ -28,7 +31,6 @@
 	}
 	.services {
 		margin: 20px auto;
-		background-color: rgba(175,175,175,1);
 		max-width: 440px;
 		.rotate {
 				-ms-transform: rotate(-90deg);
@@ -38,7 +40,6 @@
 				position: absolute;
 				top: 430px;
 				font-weight: 900;
-				color: black;
 			}
 		ul {
 			margin-top: 10px;
@@ -46,14 +47,13 @@
 			margin-left: 100px;
 			list-style-type: none;
 			li h4{
-				color: black;
 				font-size: 18px;
 				text-align: left;
 				margin: 0;
+				color: rgba(224,224,224,1);
 			}
 		}
 		h5 {
-			color: black;
 		}
 	}
 	.button {
@@ -65,7 +65,6 @@
 		padding: 10px;
 		h3 {
 			margin: 0;
-			color: black;
 		}
 	}
 	#gallery {
