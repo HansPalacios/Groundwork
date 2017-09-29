@@ -7,10 +7,13 @@
 	background-color: rgba(31,31,31,.9);
 	text-align: center;
 	p, h2, h3, a, h4, h5, li {
+		color: rgba(224,224,224,1);
+	}
+	h3, .rotate {
 		color: white;
 	}
 	#homeright {
-		background-color: rgba(0,0,0,1);
+		background-color: rgba(0,0,0,.7);
 		.row {
 			text-align: center;
 			a {
