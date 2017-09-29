@@ -1,5 +1,6 @@
 @media only screen and (max-width: 768px) {
   #homepage {
-  	margin-bottom: 630px;
+  	min-height: 100%;
+  	overflow-x: scroll;
   }
 }
