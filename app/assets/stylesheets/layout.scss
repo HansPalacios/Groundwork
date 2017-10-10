@@ -3,8 +3,12 @@
 *:after {
   box-sizing: inherit;
 }
+
 h2, h3, h4, h5, h6, p, li, input, textarea, .actions {
 	font-family: 'Forum', cursive;
+}
+h1 {
+	font-family: 'Playfair Display SC', serif;	
 }
 a {
 	text-decoration: none;
@@ -18,7 +22,6 @@ a {
 }
 html {
     height: 100%;
-  	// box-sizing: border-box;
   	background-color: black;
 }
 body {
@@ -29,43 +32,66 @@ body {
   background-size: cover;
   position: relative;
 	margin: 0;
-	// padding-bottom: 80px;  
   min-height: 100%;
-  // width: auto;
-	// padding: 0;
 }
 .page {
 	min-height: 100%;
 }
 
 header {
-	min-height: 150px;
+	height: 150px;
 	background-color: rgba(0,0,0,.75);
 	display: block;
 	width: 100%;
-	#h1 {
-	width: 400px;
+	h1 {
+	width: 500px;
 	height: 40px;
 	color: white;
-	font-family: 'Playfair Display SC', serif;
 	margin: 40px 100px;
-	font-size: 30px;
+	font-size: 40px;
+	display: inline-block;
 	}
-	ul {
-		list-style-type: none;
-		color: white;
-		margin-left: 150px;
+	.dropdown {
+	   position: absolute;
+	   right: 130px;
+	   top: 30px;
+	   display: inline-block;
+		 img {
+	    height: 40px;
+	    cursor: pointer;
+	    float: right;
+	    position: absolute;
+	    margin-top: 20px;
+		}
 	}
-	li {
-		display: inline;
-		font-size: 15px;
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    right: -40px;
+	    top: 55px;
+	    background-color: rgba(80,80,80,1);
+	    min-width: 160px;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	}
+	.dropdown-content a {
+	    color: white;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	}
+	.dropdown-content a:hover {
+		background-color: rgba(20,20,20,1);
+	}
+	.dropdown:hover .dropdown-content {
+	    display: block;
 	}
 }
 footer {
 	background-color: rgba(0,0,0,.75);
 	text-align: center;
 	width: 100%;
-  height: 80px;
+  height: 100px;
   padding: 30px;
   position: absolute;
   bottom: 0;

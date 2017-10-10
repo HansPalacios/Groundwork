@@ -1,74 +1,63 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.page {
+	padding: 0;
+}
 #homepage {
 	min-height: 100%;
-	margin: 5%;
-	background-color: rgba(31,31,31,.9);
+	margin: 0;
+	background-color: rgba(250,250,250,.9);
+	// background-image: image-url('/assets/IMG_3078.JPG');
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
 	text-align: center;
-	p, h2, h3, a, h4, h5, li {
-		color: rgba(224,224,224,1);
+	padding: 100px;
+	padding-top: 20px;
+	.row {
+		margin: 40px 0;
+		width: 100%;
+		padding: 20px;
 	}
-	h3, .rotate {
-		color: white;
-	}
-	#homeright {
-		background-color: rgba(0,0,0,.7);
-		.row {
-			text-align: center;
-			a {
-				margin: 0 auto;
-			}
-			.medialink {
-				width: 30px;
-				margin: 30px 60% 5px 60%;
-			}
-		}
-	}
-	h3 {
-		margin: 50px auto;
-	}
-	h4 em {
-		width: 300px;
-		margin: 0 auto;
+	.tint {
+		background-color: rgba(0,0,0,.85);
 	}
 	.services {
-		margin: 20px auto;
-		max-width: 440px;
-		.rotate {
-				-ms-transform: rotate(-90deg);
-    		-webkit-transform: rotate(-90deg);
-				transform: rotate(-90deg);
-				height: 20px;
-				position: absolute;
-				top: 430px;
-				font-weight: 900;
-			}
-		ul {
-			margin-top: 10px;
-			margin-bottom: 10px;
-			margin-left: 100px;
-			list-style-type: none;
-			li h4{
-				font-size: 18px;
-				text-align: left;
-				margin: 0;
-				color: rgba(224,224,224,1);
-			}
-		}
-		h5 {
-		}
+		background-color: rgba(0,0,0,0);
 	}
-	.button {
-		border: 1px solid silver;
-		margin: 30px auto;
-		width: 400px;
-		text-align: center;
-		background-color: rgba(138,138,138,.6);
-		padding: 10px;
-		h3 {
-			margin: 0;
-		}
+	hr {
+		border-top: 1px solid #5a5a5a;
+		width: 60%;
+		margin: 10px auto;
+	}
+	h1 {
+		font-weight: 900;
+		font-size: 50px;
+		text-shadow: 1px 1px darkgrey;
+	}
+	p, h1, h2, h3, a, h4, h5, li {
+		color: black;
+		margin: 0 auto;
+	}
+	img {
+		max-width: 100%;
+		max-height: 200px;
+	}
+	p {
+		width: 70%;
+		font-size: 20px;
+		font-weight: 900;
+		position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+	}
+	
+}
+#recentclients {
+	.medialink {
+		height: 50px;
+		margin: 0 auto;
 	}
 	#gallery {
 		width:  90%;

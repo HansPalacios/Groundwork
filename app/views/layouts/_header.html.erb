@@ -1,0 +1,96 @@
+<header class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<a href="/", id="h1a"><h1>Groundwork Detailing</h1></a>
+					<div class="dropdown">
+					  <%= image_tag("hamburgermenu.png", :alt => "rss feed") %>
+					  <div class="dropdown-content">
+					    <a href="/">Home</a>
+					    <a href="/pricing">Pricing</a>
+					    <a href="/reviews">Reviews</a>
+					    <a href="/about">Our Mission</a>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div id="messages">
+					<br>
+					<br>
+					<p class="notice"><%= notice %></p>
+     			<p class="alert"><%= alert %></p>
+				</div>
+			</div>
+			<% if @homepage %>
+				<div class="row">
+					<h2><strong>To book an appointment, call us at<br><br>(860) 268-4920</strong></h2>
+				</div>
+				<div class="row">
+					<h4><em>Ask for current specials</em></h4>
+				</div>
+				<div class="row">
+					<a class="button" href="/pricing"><h3>Check out our detailing packages</h3></a>
+				</div>	
+				<div class="row">
+						<%= image_tag "arrow.png", :class => "arrow" %>
+				</div>
+				<style>
+					header {
+						position: absolute;
+						height: 100%;
+						background-color: rgba(0,0,0,.3);
+						/*background-image: url('/assets/headerhome.JPG');
+						background-attachment: fixed;
+  					background-position: center;
+  					background-repeat: no-repeat;*/
+  					/*background-size: 120%;*/
+					}
+					header h2, header h4, .button {
+						margin: 20px auto;
+						color: white;
+						text-align: center;
+					}
+					.button {
+						background-color: rgba(100,100,100,.9);
+						padding: 10px;
+					}
+					.button:hover {
+						background-color: rgba(150,150,150,.9);
+					}
+					header h1, #h1a {
+						font-size: 60px;
+						height: 80px;
+						width: 100%;
+						text-align: center;
+						margin: 0;
+					}
+					#h1a {
+						display: block;
+						margin: 120px auto 0 auto;
+					}
+					.arrow {
+					  -moz-animation: bounce 2s infinite;
+					  -webkit-animation: bounce 2s infinite;
+					  animation: bounce 2s infinite;
+					  height: 50px;
+					  margin: 50px auto;
+					}
+					@keyframes bounce {
+					  0%, 20%, 50%, 80%, 100% {
+					    transform: translateY(0);
+					  }
+					  40% {
+					    transform: translateY(-30px);
+					  }
+					  60% {
+					    transform: translateY(-15px);
+					  }
+					}
+					body {
+						background-image: url('/assets/headerhome.JPG');
+						/*position: relative;*/
+					}
+
+				</style>
+			<% end %>
+		</header>
