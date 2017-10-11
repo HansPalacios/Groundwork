@@ -43,32 +43,42 @@ header {
 	background-color: rgba(0,0,0,.75);
 	display: block;
 	width: 100%;
+	// .headerlinks {
+	// 	position: absolute;
+	//   right: 145px;
+	//   top: 42px;
+	//   text-align: center;
+	// 	 a, .medialink {
+	// 		height: 20px;
+	// 		margin: 0 5px;
+	// 	}
+	// }
 	h1 {
 	width: 500px;
 	height: 40px;
 	color: white;
-	margin: 40px 100px;
-	font-size: 40px;
+	margin: 40px;
+	margin-left: 200px;
+	// font-size: 30px;
 	display: inline-block;
 	}
 	.dropdown {
 	   position: absolute;
 	   right: 130px;
-	   top: 30px;
+	   top: 50px;
 	   display: inline-block;
 		 img {
 	    height: 40px;
 	    cursor: pointer;
 	    float: right;
 	    position: absolute;
-	    margin-top: 20px;
 		}
 	}
 	.dropdown-content {
 	    display: none;
 	    position: absolute;
 	    right: -40px;
-	    top: 55px;
+	    top: 40px;
 	    background-color: rgba(80,80,80,1);
 	    min-width: 160px;
 	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);

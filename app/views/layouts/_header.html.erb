@@ -22,12 +22,17 @@
 				</div>
 			</div>
 			<% if @homepage %>
+				<div class="row links">
+					<a href="https://www.facebook.com/groundworkdetailing/" target="_blank"><%= image_tag("bwfb.png", :alt => "rss feed", :class => "medialink") %></a>
+					<a href="https://www.instagram.com/groundworkdetailing/" target="_blank"><%= image_tag("bwinsta.png", :alt => "rss feed", :class => "medialink") %></a>
+					<a href="https://twitter.com/search?q=%40Gworkdetailing&src=typd" target="_blank"><%= image_tag("bwtwitter.png", :alt => "rss feed", :class => "medialink") %></a>
+				</div>
 				<div class="row">
 					<h2><strong>To book an appointment, call us at<br><br>(860) 268-4920</strong></h2>
 				</div>
-				<div class="row">
+				<!-- <div class="row">
 					<h4><em>Ask for current specials</em></h4>
-				</div>
+				</div> -->
 				<div class="row">
 					<a class="button" href="/pricing"><h3>Check out our detailing packages</h3></a>
 				</div>	
@@ -39,11 +44,6 @@
 						position: absolute;
 						height: 100%;
 						background-color: rgba(0,0,0,.3);
-						/*background-image: url('/assets/headerhome.JPG');
-						background-attachment: fixed;
-  					background-position: center;
-  					background-repeat: no-repeat;*/
-  					/*background-size: 120%;*/
 					}
 					header h2, header h4, .button {
 						margin: 20px auto;
@@ -58,7 +58,7 @@
 						background-color: rgba(150,150,150,.9);
 					}
 					header h1, #h1a {
-						font-size: 60px;
+						font-size: 50px;
 						height: 80px;
 						width: 100%;
 						text-align: center;

@@ -4,26 +4,70 @@
 .page {
 	padding: 0;
 }
-#homepage {
+
+// #recentclients {
+// 	background-color: rgba(0,0,0,.9);
+// 	.row {
+// 		width: 100%;
+// 	}
+// 	h1 {
+// 		margin: 80px auto 40px auto;
+// 		font-weight: 900;
+// 		// font-size: 40px;
+// 		color: white;
+// 	}
+// 	#gallery {
+// 		max-height: 40%;
+// 		// padding: 10%;
+// 		text-align: center;
+// 		.mySlides {
+// 			display: none;
+// 		  margin: 20px 0;
+// 		  padding: 50px;
+// 		  img {
+// 		  	max-height: 90%;
+// 				// margin-top: 50px;
+// 				max-width: 90%;
+// 				display: inline-block;
+// 		  }
+// 		  h5 {
+// 		  	// width: 100%;
+// 		  	text-align: center;
+// 		  	padding: 5%;
+// 		  	display: inline-block;
+// 		  	color: white;
+// 		  }
+// 		}
+// 	}
+// }
+
+	
+
+.links {
+	width: 30%;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 30px;
+	.medialink, a {
+		height: 30px;
+		margin: 0 auto;
+		pointer: cursor;
+	}
+}
+
+#services {
 	min-height: 100%;
 	margin: 0;
 	background-color: rgba(250,250,250,.9);
-	// background-image: image-url('/assets/IMG_3078.JPG');
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
 	text-align: center;
-	padding: 100px;
+	padding: 3%;
 	padding-top: 20px;
 	.row {
 		margin: 40px 0;
 		width: 100%;
 		padding: 20px;
 	}
-	.tint {
-		background-color: rgba(0,0,0,.85);
-	}
-	.services {
+	.title {
 		background-color: rgba(0,0,0,0);
 	}
 	hr {
@@ -33,7 +77,7 @@
 	}
 	h1 {
 		font-weight: 900;
-		font-size: 50px;
+		// font-size: 40px;
 		text-shadow: 1px 1px darkgrey;
 	}
 	p, h1, h2, h3, a, h4, h5, li {
@@ -45,42 +89,14 @@
 		max-height: 200px;
 	}
 	p {
+		height: auto;
 		width: 70%;
 		font-size: 20px;
 		font-weight: 900;
-		position: absolute;
-    top: 0; bottom: 0; left: 0; right: 0;
-    margin: auto;
+    display: inline-block;
 	}
 	
 }
-#recentclients {
-	.medialink {
-		height: 50px;
-		margin: 0 auto;
-	}
-	#gallery {
-		width:  90%;
-		height: 70%;
-		margin: 20px auto;
-		#galleryslides {
-			height: 200px;
-		}
-		.mySlides {
-			display: none;
-			max-height: 70%;
-			margin-top: 50px;
-			max-width: 100%;
-		  margin: 0 auto;
-		}
-		p {
-			font-size: 18px;
-			padding: 0 10%;
-		}
-	}
-}
-
-
 
 
 
