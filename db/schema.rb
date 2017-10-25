@@ -10,47 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170918213721) do
+ActiveRecord::Schema.define(version: 20171025174747) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "appointments", force: :cascade do |t|
-    t.integer "detailer_id"
-    t.integer "customer_id"
-    t.integer "plan_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "customers", force: :cascade do |t|
-    t.string "fname"
-    t.string "lname"
-    t.string "email"
-    t.string "phone_number"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "detailers", force: :cascade do |t|
-    t.string "fname"
-    t.string "lname"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "plans", force: :cascade do |t|
-    t.string "plan_name"
-    t.integer "price"
-    t.boolean "headlight_restoration"
-    t.boolean "wax"
-    t.boolean "tires"
-    t.boolean "steam_carpets"
-    t.boolean "vacuum"
-    t.float "apt_time"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "reviews", force: :cascade do |t|
     t.string "name"
@@ -59,6 +22,13 @@ ActiveRecord::Schema.define(version: 20170918213721) do
     t.text "content"
     t.datetime "timestamp"
     t.boolean "reviewed"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "textboxes", force: :cascade do |t|
+    t.text "content"
+    t.string "group"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

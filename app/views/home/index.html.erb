@@ -50,10 +50,10 @@
 					</div>	
 					<div class="col-md-5">
 						<div class="row">
-	        		<p><%= @reviews.first.content %></p>
+	        		<p><%= @reviews.third.content %></p>
 	        	</div>
 	        	<div class="row">
-		        	<h5>-<%= @reviews.first.name %></h5>
+		        	<h5>-<%= @reviews.third.name %></h5>
 	        	</div>
 	        	<div class="row">
 	        		<a href="/reviews" class="button">...more reviews</a>
@@ -70,10 +70,10 @@
 					</div>	
 					<div class="col-md-5">
 						<div class="row">
-	        		<p><%= @reviews.second.content %></p>
+	        		<p><%= @reviews.fourth.content %></p>
 	        	</div>
 	        	<div class="row">
-		        	<h5>-<%= @reviews.second.name %></h5>
+		        	<h5>-<%= @reviews.fourth.name %></h5>
 	        	</div>
 	        	<div class="row">
 	        		<a href="/reviews" class="button">...more reviews</a>
@@ -96,13 +96,15 @@
 			<%= image_tag("car.png", :alt => "rss feed") %>
 		</div>
 		<div class="col-md-7">
-			<a href="/pricing"><p>Check out our detailing packages to find the one best suited to your needs.</p></a><br><p>Or for customers who are looking to get their cars meticulously maintained by Groundwork we offer specific monthly packages that can be customized and suited to fit everyone's needs. Call for more info; prices starting at $40 a month.</p>
+			<a href="/pricing"><p><%= Textbox.find(4).content %></p></a>
+			<br>
+			<p><%= Textbox.find(5).content %></p>
 		</div>
 	</div>
 	<hr>
 	<div class="row">
 		<div class="col-md-7">
-			<p>Putting your boat away for the winter? Or maybe you want to have us come in and do an interior detailing before a day trip with the family? We offer special packages depending on what you need. Contact us for more info.</p>
+			<p><%= Textbox.find(6).content %></p>
 		</div>
 		<div class="col-md-5">
 			<%= image_tag("boat.png", :alt => "rss feed") %>
@@ -114,13 +116,13 @@
 			<%= image_tag("plane.png", :alt => "rss feed") %>
 		</div>
 		<div class="col-md-7">
-			<p>We detail interiors and exteriors of planes, pricing varies, please contact us for more info.</p>
+			<p><%= Textbox.find(7).content %></p>
 		</div>
 	</div>	
 	<hr>	
 	<div class="row">
 		<div class="col-md-7">
-			<p>Fleet options available, contact us for pricing and to set up a maintenance schedule.</p>
+			<p><%= Textbox.find(8).content %></p>
 		</div>
 		<div class="col-md-5">
 			<%= image_tag("fleet.png", :alt => "rss feed") %>

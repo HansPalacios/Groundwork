@@ -5,6 +5,7 @@ class ReviewsController < ApplicationController
   # GET /reviews.json
   def index
     @reviews = Review.all
+    @textbox = Textbox.find_by(:id => params[:id])
   end
 
   # GET /reviews/1

@@ -28,13 +28,11 @@
 					<a href="https://twitter.com/search?q=%40Gworkdetailing&src=typd" target="_blank"><%= image_tag("bwtwitter.png", :alt => "rss feed", :class => "medialink") %></a>
 				</div>
 				<div class="row">
-					<h2><strong>To book an appointment, call us at<br><br>(860) 268-4920</strong></h2>
+					<h2><strong><%= Textbox.find(1).content %>
+						<br><br><%= Textbox.find(2).content %></strong></h2>
 				</div>
-				<!-- <div class="row">
-					<h4><em>Ask for current specials</em></h4>
-				</div> -->
 				<div class="row">
-					<a class="button" href="/pricing"><h3>Check out our detailing packages</h3></a>
+					<a class="button" href="/pricing"><h3><%= Textbox.find(3).content %></h3></a>
 				</div>	
 				<div class="row">
 						<%= image_tag "arrow.png", :class => "arrow" %>

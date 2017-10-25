@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Textboxes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @textboxes.each do |textbox| %>
+      <tr>
+        <td><%= textbox.content %></td>
+        <td><%= link_to 'Show', textbox %></td>
+        <td><%= link_to 'Edit', edit_textbox_path(textbox) %></td>
+        <td><%= link_to 'Destroy', textbox, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Textbox', new_textbox_path %>
