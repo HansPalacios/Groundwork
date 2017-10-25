@@ -16,7 +16,7 @@
 		text-align: center;
 	}
 	.pricebox {
-	background-color: rgba(169,169,169,.95);
+	background-color: rgba(225,225,225,.95);
 		margin: 20px;
 		padding: 30px;
 	}
@@ -34,5 +34,12 @@
 	}
 	h4{
 		margin-bottom: 30px;
+	}
+	.col-md-7 {
+		margin: 20px auto;
+		padding: 5px;
+		h3 {
+			margin: 20px auto;
+		}
 	}
 }

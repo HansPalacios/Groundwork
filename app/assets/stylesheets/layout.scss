@@ -4,7 +4,7 @@
   box-sizing: inherit;
 }
 
-h2, h3, h4, h5, h6, p, li, input, textarea, .actions {
+h2, h3, h4, h5, h6, p, pre, li, input, textarea, .actions {
 	font-family: 'Forum', cursive;
 }
 h1 {
@@ -43,23 +43,12 @@ header {
 	background-color: rgba(0,0,0,.75);
 	display: block;
 	width: 100%;
-	// .headerlinks {
-	// 	position: absolute;
-	//   right: 145px;
-	//   top: 42px;
-	//   text-align: center;
-	// 	 a, .medialink {
-	// 		height: 20px;
-	// 		margin: 0 5px;
-	// 	}
-	// }
 	h1 {
 	width: 500px;
 	height: 40px;
 	color: white;
 	margin: 40px;
 	margin-left: 200px;
-	// font-size: 30px;
 	display: inline-block;
 	}
 	.dropdown {
