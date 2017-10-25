@@ -9,11 +9,14 @@
 	color: black;
 	text-align: center;
 	}
+	strong {
+		color: rgba(121,11,11,1);
+	}
 	.row {
 		text-align: center;
 	}
 	.pricebox {
-	background-color: rgba(225,225,225,.95);
+		background-color: rgba(225,225,225,.95);
 		margin: 20px;
 		padding: 30px;
 	}
@@ -37,6 +40,7 @@
 		padding: 5px;
 		h3 {
 			margin: 20px auto;
+			color: rgba(121,11,11,1);
 		}
 	}
 }
