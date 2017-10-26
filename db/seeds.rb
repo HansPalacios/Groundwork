@@ -85,15 +85,17 @@ Textbox.create([
 	{id: 66, content: "Remove dirt and grime from “hard-to-reach” areas", group: "interior"},
 	{id: 67, content: "Small stain removal by steam", group: "interior"},
 	{id: 68, content: "Time: 2-3 hours"},
-	{id: 69, content: "Add on Highlight Restoration to any package <br>or service individually for $40"},
-	{id: 70, content: "Reviews"},
-	{id: 71, content: "New Review"},
-	{id: 72, content: "If you have any questions, concerns, or complaints, please call us at"},
-	{id: 73, content: "or email us at"},
-	{id: 74, content: "groundworkdetailing@yahoo.com"},
-	{id: 75, content: "and we will work with you to resolve it to the best of our ability."},
-	{id: 76, content: "Our mission is to give you a unique experience when it comes to maintaining one of your largest investments; your car! There are plenty of professional detailers, but only one can give you the Groundwork Experience! We've set a high standard for ourselves when it comes to customer satisfaction. Whether it's mechanical, cosmetic, or consulting, we're your go-to team! Our passion is your car, you won't have to worry when it's in our hands."},
-	{id: 77, content: "Founded by Ryan Viera, a father and entreprenuer, who started with a simple headlight restoration service. And has since built it into a full service auto detailing company which only continues to grow."},
-	{id: 78, content: "Come join the family, call us at (860) 268-4920 to book an appointment today"}
+	{id: 69, content: "Add on Highlight Restoration to any package"},
+	{id: 70, content: "or service individually for $40"},
+	{id: 71, content: "Reviews"},
+	{id: 72, content: "New Review"},
+	{id: 73, content: "If you have any questions, concerns, or complaints, please call us at"},
+	{id: 74, content: "or email us at"},
+	{id: 75, content: "groundworkdetailing@yahoo.com"},
+	{id: 76, content: "and we will work with you to resolve it to the best of our ability."},
+	{id: 77, content: "Our Mission"},
+	{id: 78, content: "Our mission is to give you a unique experience when it comes to maintaining one of your largest investments; your car! There are plenty of professional detailers, but only one can give you the Groundwork Experience! We've set a high standard for ourselves when it comes to customer satisfaction. Whether it's mechanical, cosmetic, or consulting, we're your go-to team! Our passion is your car, you won't have to worry when it's in our hands."},
+	{id: 79, content: "Founded by Ryan Viera, a father and entreprenuer, who started with a simple headlight restoration service. And has since built it into a full service auto detailing company which only continues to grow."},
+	{id: 80, content: "Come join the family, call us at (860) 268-4920 to book an appointment today"}
 	])
 

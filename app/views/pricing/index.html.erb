@@ -1,119 +1,97 @@
 <div id="pricing">
 	<div class="row">
 		<div class="col-md-5 pricebox margin">
-				<h2><%= Textbox.find(9).content %></h2>
-				<em><h4><%= Textbox.find(10).content %></h4></em>
+				<h2><%= @textboxes.find(9).content %></h2>
+				<em><h4><%= @textboxes.find(10).content %></h4></em>
 			<div class="row">
 				<div class="col-md-6">
 					<ul>
-						<li><strong><%= Textbox.find(11).content %></strong></li>
-						<li><strong><%= Textbox.find(12).content %></strong></li>
-						<li><strong><%= Textbox.find(13).content %></strong></li>
-						<li><%= Textbox.find(14).content %></li>
-						<li>Wheels polished</li>
-						<li>Tires cleaned/dressed</li>
-						<li>Engine bay degreased</li>
-						<li>Bug and tar removal</li>
-						<li>Windows washed inside and out</li>
+						<li><strong><%= @textboxes.find(11).content %></strong></li>
+						<li><strong><%= @textboxes.find(12).content %></strong></li>
+						<li><strong><%= @textboxes.find(13).content %></strong></li>
+						<li><%= @textboxes.find(14).content %></li>
+						<% @textboxes[14..18].each do |textbox| %>
+							<li><%= textbox.content %></li>
+						<% end %>
 					</ul>
 				</div>
 				<div class="col-md-6">
 					<ul>		
-						<li>Trim is restored and conditioned</li>
-						<li>Mirrors cleaned</li>
-						<li>Door jams cleaned</li>
-						<li>Vacuum/shampoo carpet and cloth seats</li>
-						<li>Vacuum/condition Leather seats</li>
-						<li>Steam and remove all stains</li>
-						<li>"Hard-to-reach" grime and dirt removed</li>
-						<li>Upholstery wiped down, and dressed</li>
-						<li>Clay Bar</li>
+						<% @textboxes[19..27].each do |textbox| %>
+							<li><%= textbox.content %></li>
+						<% end %>
 					</ul>
 				</div>
 			</div>
-			<h3>Time: 5-6 hours</h3>
+			<h3><%= @textboxes.find(29).content %></h3>
 		</div>
 		<div class="col-md-5 pricebox">
-			<h2>The Works - Complete Detail $150.00</h2>
-			<em><h4>Full Interior/Exterior Detail</h4></em>
+			<h2><%= @textboxes.find(30).content %></h2>
+			<em><h4><%= @textboxes.find(31).content %></h4></em>
 			<div class="row">
 				<div class="col-md-6">
 					<ul>
-						<li>Hand Wash</li>
-						<li>Microfiber towel dry</li>
-						<li>Clean inside + outside of windows</li>
-						<li>Clean mirrors</li>
-						<li>Thorough Trunk Cleaning</li>
-						<li>Clean/dress tires and rims</li>
-						<li>Wax + polish exterior</li>
-						<li>Small scratches buffed out</li>
+						<% @textboxes[31..39].each do |textbox| %>
+							<li><%= textbox.content %></li>
+						<% end %>
 					</ul>
 				</div>
 				<div class="col-md-6">
 					<ul>				
-						<li>Door jams cleaned</li>
-						<li>Bug/tar removal</li>
-						<li>Vacuum</li>
-						<li>Leather conditioned or fabric shampooed<li>
-						<li>Clean/dress dash, vents, upholstery</li>
-						<li>Remove dirt and grime from “hard-to-reach” areas</li>
-						<li>Small stain removal by steam</li>
+						<% @textboxes[40..45].each do |textbox| %>
+							<li><%= textbox.content %></li>
+						<% end %>
 					</ul>
 				</div>
 			</div>
-			<h3>Time: 4 hours</h3>
+			<h3><%= @textboxes.find(47).content %></h3>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-5 pricebox margin">
-			<h2>Exterior Detail $120.00</h2>
+			<h2><%= @textboxes.find(48).content %></h2>
 			<div class="row">	
 				<div class="col-md-6">
 					<ul>
-						<li>Hand Wash</li>
-						<li>Microfiber towel dry</li>
-						<li>Clean inside + outside of windows</li>
-						<li>Clean mirrors</li>
-						<li>Clean/dress tires and rims</li>
+						<% @textboxes[48..52].each do |textbox| %>
+							<li><%= textbox.content %></li>
+						<% end %>
 					</ul>
 				</div>
 				<div class="col-md-6">
 					<ul>				
-						<li>Wax + polish exterior</li>
-						<li>Small scratches buffed out</li>
-						<li>Door jams cleaned</li>
-						<li>Bug/tar removal</li>
+						<% @textboxes[53..56].each do |textbox| %>
+							<li><%= textbox.content %></li>
+						<% end %>
 					</ul>
 				</div>
 			</div>
-			<h3>Time: 2-3 hours</h3>
+			<h3><%= @textboxes.find(58).content %></h3>
 		</div>
 		<div class="col-md-5 pricebox">
-			<h2>Interior Detail $80.00</h2>
+			<h2><%= @textboxes.find(59).content %></h2>
 			<div class="row">
 				<div class="col-md-6">
 					<ul>
-						<li>Vacuum</li>
-						<li>Clean inside + outside of windows</li>
-						<li>Clean mirrors</li>
-						<li>Leather conditioned or fabric shampooed</li>
-						<li>Door jams cleaned</li>
+						<% @textboxes[59..62].each do |textbox| %>
+							<li><%= textbox.content %></li>
+						<% end %>
 					</ul>
 				</div>
 				<div class="col-md-6">
 					<ul>
-						<li>Clean/dress dash, vents, upholstery</li>
-						<li>Remove dirt and grime from “hard-to-reach” areas</li>
-						<li>Small stain removal by steam</li>
+						<% @textboxes[63..66].each do |textbox| %>
+							<li><%= textbox.content %></li>
+						<% end %>
 					</ul>
 				</div>
 			</div>
-		<h3>Time: 2-3 hours</h3>
+		<h3><%= @textboxes.find(68).content %></h3>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-7 pricebox">
-			<h3>Add on Highlight Restoration to any package <br>or service individually for $40</h3>
+			<h3><%= @textboxes.find(69).content %><br><%= @textboxes.find(70).content %></h3>
 		</div>
 	</div>
 </div>

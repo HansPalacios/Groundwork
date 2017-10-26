@@ -96,15 +96,15 @@
 			<%= image_tag("car.png", :alt => "rss feed") %>
 		</div>
 		<div class="col-md-7">
-			<a href="/pricing"><p><%= Textbox.find(4).content %></p></a>
+			<a href="/pricing"><p><%= @textboxes.find(4).content %></p></a>
 			<br>
-			<p><%= Textbox.find(5).content %></p>
+			<p><%= @textboxes.find(5).content %></p>
 		</div>
 	</div>
 	<hr>
 	<div class="row">
 		<div class="col-md-7">
-			<p><%= Textbox.find(6).content %></p>
+			<p><%= @textboxes.find(6).content %></p>
 		</div>
 		<div class="col-md-5">
 			<%= image_tag("boat.png", :alt => "rss feed") %>
@@ -116,13 +116,13 @@
 			<%= image_tag("plane.png", :alt => "rss feed") %>
 		</div>
 		<div class="col-md-7">
-			<p><%= Textbox.find(7).content %></p>
+			<p><%= @textboxes.find(7).content %></p>
 		</div>
 	</div>	
 	<hr>	
 	<div class="row">
 		<div class="col-md-7">
-			<p><%= Textbox.find(8).content %></p>
+			<p><%= @textboxes.find(8).content %></p>
 		</div>
 		<div class="col-md-5">
 			<%= image_tag("fleet.png", :alt => "rss feed") %>

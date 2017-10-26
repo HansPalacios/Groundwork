@@ -1,13 +1,13 @@
 <div class="row" id="reviews">
 	<div class="col-md-12">
 		<div class="row">
-			<h4>Reviews</h4>
+			<h4><%= @textboxes.find(71).content %></h4>
 		</div>
 		<hr>
 		<div class="row">
 			<div class="col-md-2"></div>
 			<div class="col-md-4">
-				<h5>New Review</h5>
+				<h5><%= @textboxes.find(72).content %></h5>
         <%= form_for :review, url: reviews_path do |form| %>
           <% if @review && @review.errors.any? %>
             <div id="error_explanation">
@@ -51,7 +51,7 @@
         <% end %>
       </div>
       <div class="col-md-4">
-      	<h6>If you have any questions, concerns, or complaints, please call us at <br><em>(860) 268-4920</em><br> or email us at <br><em> groundworkdetailing@yahoo.com </em><br> and we will work with you to resolve it to the best of our ability.<h6>
+      	<h6><%= @textboxes.find(73).content %><br><em><%= @textboxes.find(2).content %></em><br> <%= @textboxes.find(74).content %><br><em> <%= @textboxes.find(75).content %> </em><br> <%= @textboxes.find(76).content %><h6>
       </div>
 			<div class="col-md-2"></div>
 		</div>
@@ -78,7 +78,7 @@
 	        <h5 class="row">
 		        -<%= review.name %>
 	        </h5>
-	        <% if user_signed_in? && current_user.admin? %>
+	        <% if user_signed_in? %>
 		        <div class="row">
 		        	<hr>
 		        	Email: <%= review.email %>
