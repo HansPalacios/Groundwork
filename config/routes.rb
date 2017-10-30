@@ -8,5 +8,5 @@ root 'home#index'
 get '/pricing' => 'pricing#index'
 get '/reviews' => 'reviews#index'
 get '/about' =>'about#index'
-
+get '/admin' => 'admin#index'
 end
