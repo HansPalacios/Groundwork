@@ -11,7 +11,7 @@ class ReviewsController < ApplicationController
   # GET /reviews/1
   # GET /reviews/1.json
   def show
-    unless user_signed_in? && current_user.admin?
+    unless user_signed_in? 
       flash[:notice] = "You don't have access to that page!"
       redirect_to root_path
       return
@@ -26,7 +26,7 @@ class ReviewsController < ApplicationController
 
   # GET /reviews/1/edit
   def edit
-    unless user_signed_in? && current_user.admin?
+    unless user_signed_in? 
       flash[:notice] = "You don't have access to that page!"
       redirect_to root_path
       return
@@ -52,7 +52,7 @@ class ReviewsController < ApplicationController
   # PATCH/PUT /reviews/1
   # PATCH/PUT /reviews/1.json
   def update
-    unless user_signed_in? && current_user.admin?
+    unless user_signed_in? 
       flash[:notice] = "You don't have access to that page!"
       redirect_to root_path
       return
@@ -71,7 +71,7 @@ class ReviewsController < ApplicationController
   # DELETE /reviews/1
   # DELETE /reviews/1.json
   def destroy
-    unless user_signed_in? && current_user.admin?
+    unless user_signed_in? 
       flash[:notice] = "You don't have access to that page!"
       redirect_to root_path
       return

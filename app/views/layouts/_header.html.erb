@@ -9,16 +9,11 @@
 					    <a href="/pricing">Pricing</a>
 					    <a href="/reviews">Reviews</a>
 					    <a href="/about">Our Mission</a>
+					    <% if user_signed_in? %>
+								<%= link_to "Sign Out", destroy_user_session_path, method: :delete, :id => 'signout' %>
+							<% end %>
 					  </div>
 					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div id="messages">
-					<br>
-					<br>
-					<p class="notice"><%= notice %></p>
-     			<p class="alert"><%= alert %></p>
 				</div>
 			</div>
 			<% if @homepage %>
@@ -28,12 +23,20 @@
 					<a href="https://twitter.com/search?q=%40Gworkdetailing&src=typd" target="_blank"><%= image_tag("bwtwitter.png", :alt => "rss feed", :class => "medialink") %></a>
 				</div>
 				<div class="row">
-					<h2><strong><%= Textbox.find(1).content %>
-						<br><br><%= Textbox.find(2).content %></strong></h2>
+					<h2><strong>
+					<%= render '/layouts/clicktoedit', number: 1 %>
+						<br><br><%= render '/layouts/clicktoedit', number: 2 %></strong></h2>
 				</div>
 				<div class="row">
-					<a class="button" href="/pricing"><h3><%= Textbox.find(3).content %></h3></a>
+					<a class="button" href="/pricing"><h3><%= @textboxes.find(3).content %></h3></a>
 				</div>	
+				<div class="row">
+					<div class="col-md-12 movepen">
+						<% if user_signed_in? %>
+							<a data-toggle="modal" data-target="#editmodal" data-remote="<%= edit_textbox_path(3) %> #editform" ><%=image_tag "editpen.png", :class => "editpen" %></a>
+						<% end %>
+					</div>
+				</div>
 				<div class="row">
 						<%= image_tag "arrow.png", :class => "arrow" %>
 				</div>
@@ -47,6 +50,9 @@
 						margin: 20px auto;
 						color: white;
 						text-align: center;
+					}
+					.button h3 {
+						margin: 10px;
 					}
 					.button {
 						background-color: rgba(100,100,100,.9);
@@ -64,7 +70,7 @@
 					}
 					#h1a {
 						display: block;
-						margin: 120px auto 0 auto;
+						margin: 120px auto 100px auto;
 					}
 					.arrow {
 					  -moz-animation: bounce 2s infinite;

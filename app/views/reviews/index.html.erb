@@ -1,13 +1,13 @@
 <div class="row" id="reviews">
 	<div class="col-md-12">
 		<div class="row">
-			<h4><%= @textboxes.find(71).content %></h4>
+			<h4><%= render '/layouts/clicktoedit', number: 71 %></h4>
 		</div>
 		<hr>
 		<div class="row">
 			<div class="col-md-2"></div>
 			<div class="col-md-4">
-				<h5><%= @textboxes.find(72).content %></h5>
+				<h5><%= render '/layouts/clicktoedit', number: 72 %></h5>
         <%= form_for :review, url: reviews_path do |form| %>
           <% if @review && @review.errors.any? %>
             <div id="error_explanation">
@@ -51,7 +51,7 @@
         <% end %>
       </div>
       <div class="col-md-4">
-      	<h6><%= @textboxes.find(73).content %><br><em><%= @textboxes.find(2).content %></em><br> <%= @textboxes.find(74).content %><br><em> <%= @textboxes.find(75).content %> </em><br> <%= @textboxes.find(76).content %><h6>
+      	<h6><%= render '/layouts/clicktoedit', number: 73 %><br><em><%= render '/layouts/clicktoedit', number: 2 %></em><br> <%= render '/layouts/clicktoedit', number: 74 %><br><em> <%= render '/layouts/clicktoedit', number: 75 %> </em><br> <%= render '/layouts/clicktoedit', number: 76 %><h6>
       </div>
 			<div class="col-md-2"></div>
 		</div>

@@ -1,97 +1,96 @@
 <div id="pricing">
 	<div class="row">
 		<div class="col-md-5 pricebox margin">
-				<h2><%= @textboxes.find(9).content %></h2>
-				<em><h4><%= @textboxes.find(10).content %></h4></em>
+				<h2><%= render '/layouts/clicktoedit', number: 9 %></h2>
+				<em><h4><%= render '/layouts/clicktoedit', number: 10 %></h4></em>
 			<div class="row">
 				<div class="col-md-6">
 					<ul>
-						<li><strong><%= @textboxes.find(11).content %></strong></li>
-						<li><strong><%= @textboxes.find(12).content %></strong></li>
-						<li><strong><%= @textboxes.find(13).content %></strong></li>
-						<li><%= @textboxes.find(14).content %></li>
-						<% @textboxes[14..18].each do |textbox| %>
-							<li><%= textbox.content %></li>
+						<% @textboxes[10..12].each do |textbox| %>
+							<li><strong><%= render '/layouts/clicktoedit', number: textbox.id %></strong></li>
+						<% end %>
+						<% @textboxes[13..18].each do |textbox| %>
+							<li><%= render '/layouts/clicktoedit', number: textbox.id %></li>
 						<% end %>
 					</ul>
 				</div>
 				<div class="col-md-6">
 					<ul>		
 						<% @textboxes[19..27].each do |textbox| %>
-							<li><%= textbox.content %></li>
+							<li><%= render '/layouts/clicktoedit', number: textbox.id %></li>
 						<% end %>
 					</ul>
 				</div>
 			</div>
-			<h3><%= @textboxes.find(29).content %></h3>
+			<h3><%= render '/layouts/clicktoedit', number: 29 %></h3>
 		</div>
 		<div class="col-md-5 pricebox">
-			<h2><%= @textboxes.find(30).content %></h2>
-			<em><h4><%= @textboxes.find(31).content %></h4></em>
+			<h2><%= render '/layouts/clicktoedit', number: 30 %></h2>
+			<em><h4><%= render '/layouts/clicktoedit', number: 31 %></h4></em>
 			<div class="row">
 				<div class="col-md-6">
 					<ul>
 						<% @textboxes[31..39].each do |textbox| %>
-							<li><%= textbox.content %></li>
+							<li><%= render '/layouts/clicktoedit', number: textbox.id %></li>
 						<% end %>
 					</ul>
 				</div>
 				<div class="col-md-6">
 					<ul>				
 						<% @textboxes[40..45].each do |textbox| %>
-							<li><%= textbox.content %></li>
+							<li><%= render '/layouts/clicktoedit', number: textbox.id %></li>
 						<% end %>
 					</ul>
 				</div>
 			</div>
-			<h3><%= @textboxes.find(47).content %></h3>
+			<h3><%= render '/layouts/clicktoedit', number: 47 %></h3>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-5 pricebox margin">
-			<h2><%= @textboxes.find(48).content %></h2>
+			<h2><%= render '/layouts/clicktoedit', number: 48 %></h2>
 			<div class="row">	
 				<div class="col-md-6">
 					<ul>
 						<% @textboxes[48..52].each do |textbox| %>
-							<li><%= textbox.content %></li>
+							<li><%= render '/layouts/clicktoedit', number: textbox.id %></li>
 						<% end %>
 					</ul>
 				</div>
 				<div class="col-md-6">
 					<ul>				
 						<% @textboxes[53..56].each do |textbox| %>
-							<li><%= textbox.content %></li>
+							<li><%= render '/layouts/clicktoedit', number: textbox.id %></li>
 						<% end %>
 					</ul>
 				</div>
 			</div>
-			<h3><%= @textboxes.find(58).content %></h3>
+			<h3><%= render '/layouts/clicktoedit', number: 58 %></h3>
 		</div>
 		<div class="col-md-5 pricebox">
-			<h2><%= @textboxes.find(59).content %></h2>
+			<h2><%= render '/layouts/clicktoedit', number: 59 %></h2>
 			<div class="row">
 				<div class="col-md-6">
 					<ul>
 						<% @textboxes[59..62].each do |textbox| %>
-							<li><%= textbox.content %></li>
+							<li><%= render '/layouts/clicktoedit', number: textbox.id %></li>
 						<% end %>
 					</ul>
 				</div>
 				<div class="col-md-6">
 					<ul>
 						<% @textboxes[63..66].each do |textbox| %>
-							<li><%= textbox.content %></li>
+							<li><%= render '/layouts/clicktoedit', number: textbox.id %></li>
 						<% end %>
 					</ul>
 				</div>
 			</div>
-		<h3><%= @textboxes.find(68).content %></h3>
+		<h3><%= render '/layouts/clicktoedit', number: 68 %></h3>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-7 pricebox">
-			<h3><%= @textboxes.find(69).content %><br><%= @textboxes.find(70).content %></h3>
+			<h3><%= render '/layouts/clicktoedit', number: 69 %><br><%= render '/layouts/clicktoedit', number: 70 %></h3>
 		</div>
 	</div>
 </div>

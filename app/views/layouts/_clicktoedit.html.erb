@@ -1,0 +1,4 @@
+<%= @textboxes.find(number).content %>
+<% if user_signed_in? %>
+	<a data-toggle="modal" data-target="#editmodal" data-remote="<%= edit_textbox_path(number) %> #editform" ><%=image_tag "editpen.png", :class => "editpen" %></a>
+<% end %>

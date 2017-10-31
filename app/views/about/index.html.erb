@@ -7,27 +7,27 @@
 </div>
 <div id="about">
 	<div class="row">
-		<h2><%= @textboxes.find(77).content %></h2>
+		<h2><%= render '/layouts/clicktoedit', number: 77 %></h2>
 	</div>
 	<div class="row">
 		<div class="col-md-5">
 			<div class="row">
-				<%= image_tag "about.jpg" %>
+				<%= image_tag "about.jpg", :class => "image" %>
 			</div>
 		</div>
 		<div class="col-md-7">
-			<p><%= @textboxes.find(78).content %></p>
+			<p><%= render '/layouts/clicktoedit', number: 78 %></p>
 		</div>
 	</div>
 </div>
 <div id="about2">
 	<div class="row">
 		<div class="col-md-7">
-			<p><%= @textboxes.find(79).content %></p>
+			<p><%= render '/layouts/clicktoedit', number: 79 %></p>
 		</div>
 		<div class="col-md-5">
 			<div class="row">
-				<%= image_tag "IMG_3078.JPG" %>
+				<%= image_tag "IMG_3078.JPG", :class => "image" %>
 			</div>
 
 		</div>
@@ -36,7 +36,7 @@
 <div id="about3">
 	<div class="row">
 		<div class="col-md-7">
-			<h4><%= @textboxes.find(80).content %></h4>
+			<h4><%= render '/layouts/clicktoedit', number: 80 %><%= render '/layouts/clicktoedit', number: 2 %><%= render '/layouts/clicktoedit', number: 81 %></h4>
 		</div>
 	</div>
 </div>

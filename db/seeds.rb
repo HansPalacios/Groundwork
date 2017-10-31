@@ -5,6 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+User.create ([
+{email: "groundworkdetailing@yahoo.com", password: "fuckyou234"},
+{email: "hans@hspalacios.com", password: "madenomoney"}
+	])
+
+
 Review.create([ 
 {name: "Tammy", email: "", content: "Just had my 2012 Ford Edge and my Hubs 2014 Dodge Ram detailed today. Couldn't be happier with the outcome! The vehicles look great, everything is clean, polished and buffed! Ryan is detail oriented, always looking for what's overlooked. He's a great entrepreneur and wants to please his clients. I'm located quite far from him and he communicates well, was on time and worked non stop for 8 hours. Top quality work, I highly recommend."},
 {name: "Stacey", email: "", content: "My husband got me a complete car detail as a birthday present. With 3 busy boys of my own and usually many more than that in my car, I truly thought it was past the point of no return. Ryan made my car look like NEW again! I love that he came right to the house, it made it SO easy! Ryan is AMAZING and so easy to deal with! I can't recommend him enough! Thank you Ryan! Kevin is going to call you soon to do his car!"},
@@ -22,7 +28,7 @@ Textbox.create([
 	{id: 3, content: "Check out our detailing packages"},
 	{id: 4, content: "Check out our detailing packages to find the one best suited to your needs."},
 	{id: 5, content: "Or for customers who are looking to get their cars meticulously maintained by Groundwork we offer specific monthly packages that can be customized and suited to fit everyone's needs. Call for more info; prices starting at $40 a month."},
-	{id: 6, content: "Putting your boat away for the winter? Or maybe you want to have us come in and do an interior detailing before a day trip with the family? We offer special packages depending on what you need. Contact us for more info."},
+	{id: 6, content: "Putting your boat away for the winter? Or maybe you want to have us come in and spiff it up before a day trip with the family? We offer special packages depending on what you need. Contact us for more info."},
 	{id: 7, content: "We detail interiors and exteriors of planes, pricing varies, please contact us for more info."},
 	{id: 8, content: "Fleet options available, contact us for pricing and to set up a maintenance schedule."},
 	{id: 9, content: "Ground Work’s Elite Package $300.00"},
@@ -96,6 +102,7 @@ Textbox.create([
 	{id: 77, content: "Our Mission"},
 	{id: 78, content: "Our mission is to give you a unique experience when it comes to maintaining one of your largest investments; your car! There are plenty of professional detailers, but only one can give you the Groundwork Experience! We've set a high standard for ourselves when it comes to customer satisfaction. Whether it's mechanical, cosmetic, or consulting, we're your go-to team! Our passion is your car, you won't have to worry when it's in our hands."},
 	{id: 79, content: "Founded by Ryan Viera, a father and entreprenuer, who started with a simple headlight restoration service. And has since built it into a full service auto detailing company which only continues to grow."},
-	{id: 80, content: "Come join the family, call us at (860) 268-4920 to book an appointment today"}
+	{id: 80, content: "Come join the family, call us at"},
+	{id: 81, content: "to book an appointment today"}
 	])
 
