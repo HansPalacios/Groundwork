@@ -28,7 +28,7 @@ Textbox.create([
 	{id: 3, content: "Check out our detailing packages"},
 	{id: 4, content: "Check out our detailing packages to find the one best suited to your needs."},
 	{id: 5, content: "Or for customers who are looking to get their cars meticulously maintained by Groundwork we offer specific monthly packages that can be customized and suited to fit everyone's needs. Call for more info; prices starting at $40 a month."},
-	{id: 6, content: "Putting your boat away for the winter? Or maybe you want to have us come in and spiff it up before a day trip with the family? We offer special packages depending on what you need. Contact us for more info."},
+	{id: 6, content: "Putting your boat away for the winter? Or maybe you want to have us come in for a quick detail before a day trip with the family? We offer special packages depending on what you need. Contact us for more info."},
 	{id: 7, content: "We detail interiors and exteriors of planes, pricing varies, please contact us for more info."},
 	{id: 8, content: "Fleet options available, contact us for pricing and to set up a maintenance schedule."},
 	{id: 9, content: "Ground Work’s Elite Package $300.00"},
