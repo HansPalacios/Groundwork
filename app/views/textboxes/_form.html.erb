@@ -1,10 +1,8 @@
-<div id="editform">
-	<%= form_with(model: textbox) do |form| %>
-	  <div class="field">
-	    <%= form.text_area :content, id: :textbox_content %>
-	  </div>
-	  <div class="actions">
-	    <%= form.submit %>
-	  </div>
-	<% end %>
-</div>
+<%= form_with(model: textbox, remote: true, id: 77) do |form| %>
+  <div class="field">
+    <%= form.text_area :content, id: textbox.id %>
+  </div>
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

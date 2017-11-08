@@ -1,4 +1,25 @@
-<%= @textboxes.find(number).content %>
-<% if user_signed_in? %>
-	<a data-toggle="modal" data-target="#editmodal" data-remote="<%= edit_textbox_path(number) %> #editform" ><%=image_tag "editpen.png", :class => "editpen" %></a>
-<% end %>
+
+	<%= @textboxes.find(number).content %>
+	<% if user_signed_in? %>
+		<a data-toggle="modal" data-target="#editmodal<%= @textboxes.find(number).id %>">
+			<%= image_tag "editpen.png", :class => "editpen" %>
+		</a>
+
+		<div class="modal fade" id="editmodal<%= @textboxes.find(number).id%>" role="dialog" aria-hidden="true">
+			<div class="modal-header">
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+		    <h4 class="modal-title">Edit Textbox</h4>
+		  </div>
+			<div id="edit_fields" class="modal-body" >
+		 		<%= form_for @textboxes.find(number) do |form| %>		  
+		 			<div class="field">
+				    <%= form.text_area :content, value: @textboxes.find(number).content %>
+				  </div>
+				  <div class="actions">
+				    <%= form.submit %>
+				  </div>
+				<% end %>
+			</div>
+		</div>
+	<% end %>
+

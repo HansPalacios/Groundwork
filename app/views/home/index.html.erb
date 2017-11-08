@@ -98,8 +98,28 @@
 		<div class="col-md-7">
 			<a href="/pricing"><p><%= @textboxes.find(4).content %></p></a>
 			<% if user_signed_in? %>
-				<a data-toggle="modal" data-target="#editmodal" data-remote="<%= edit_textbox_path(4) %> #editform" ><%=image_tag "editpen.png", :class => "editpen" %></a>
+				<a data-toggle="modal" data-target="#editmodal<%= @textboxes.find(4).id %>">
+					<%= image_tag "editpen.png", :class => "editpen" %>
+				</a>
+
+				<div class="modal fade" id="editmodal<%= @textboxes.find(4).id%>" role="dialog" aria-hidden="true">
+					<div class="modal-header">
+				    <button type="button" class="close" data-dismiss="modal">&times;</button>
+				    <h4 class="modal-title">Edit Textbox</h4>
+				  </div>
+					<div id="edit_fields" class="modal-body" >
+				 		<%= form_for @textboxes.find(4) do |form| %>		  
+				 			<div class="field">
+						    <%= form.text_area :content, value: @textboxes.find(4).content %>
+						  </div>
+						  <div class="actions">
+						    <%= form.submit %>
+						  </div>
+						<% end %>
+					</div>
+				</div>
 			<% end %>
+
 			<br>
 			<p><%= render '/layouts/clicktoedit', number: 5 %></p>
 		</div>
@@ -132,3 +152,23 @@
 		</div>
 	</div>		
 </div>
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+	
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		    var i;
+		    var x = document.getElementsByClassName("mySlides");
+		    if( x )
+		    for (i = 0; i < x.length; i++) {
+		       x[i].style.display = "none";  
+		    }
+		    myIndex++;
+		    if (myIndex > x.length) {myIndex = 1}    
+		    x[myIndex-1].style.display = "inline-block";  
+		    setTimeout(carousel, 3500); 
+		}
+	});
+</script>

@@ -42,8 +42,8 @@ class TextboxesController < ApplicationController
   def update
     respond_to do |format|
       if @textbox.update(textbox_params)
-        format.html { notice: 'Textbox was successfully updated.' }
-        format.json { status: :ok, location: @textbox }
+        format.html { redirect_to request.referrer, notice: 'Textbox was successfully updated.' }
+        format.json { render json: @textbox }
       else
         format.json { render json: @textbox.errors, status: :unprocessable_entity }
       end

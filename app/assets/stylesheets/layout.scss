@@ -164,13 +164,20 @@ h2 {
 	}
 }
 
-#editmodal {
+.modal {
 	position:fixed;
 	left: 20%;
 	top: 10%;
-	height: 400px;
+	height: 300px;
 	width: 60%;
-	background-color: rgba(150,150,150,.99);
+	background-color: rgba(200,200,200,.99);
+	#textbox_content, h4, input {
+		color: black;
+	}
+	#textbox_content, input {
+		font-size: 15px;
+		padding: 10px;
+	}
 	h4 {
 		margin: 20px auto;
 		width: 100%;
@@ -181,6 +188,24 @@ h2 {
 		top: 20px;
 		right: 20px;
 
+	}
+	.modal-header {
+		height: 80px;
+	}
+	.modal-body {
+		text-align: center;
+		.field textarea{
+			width: 70%;
+			height: 80px;
+			margin: 20px auto;
+			overflow-y: scroll;
+			text-align: center;
+			padding: 10px;
+		}
+		.field, .action {
+			text-align: center;
+			padding: 0;
+		}
 	}
 }
 .penmargin {
