@@ -4,6 +4,8 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
+# ENV variables
+gem 'figaro'
 # Using Devise for a secure login form
 gem 'devise'
 gem 'modernizr-rails'

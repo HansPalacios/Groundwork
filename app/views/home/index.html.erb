@@ -1,14 +1,18 @@
 <div class="row" id="recentclients">
 	<div class="col-md-12 tint">
-			<h1>Recent Clients</h1>
+		<div class="row">
+			<div class="col-md-5"></div>
+			<div class="col-md-6">
+				<h1>Recent Clients</h1>
+			</div>
+		</div>
 		<div class="row" id="gallery">
 			<div class="mySlides">
 				<div class="row">
-					<div class="col-md-1"></div>
 					<div class="col-md-5">
-						<%= image_tag("car2.jpg", :alt => "rss feed") %>
+						<div id="insta-images1"></div>
 					</div>	
-					<div class="col-md-5">
+					<div class="col-md-6">
 						<div class="row">
 	        		<p><%= @reviews.first.content %></p>
 	        	</div>
@@ -24,11 +28,10 @@
 			</div>
 			<div class="mySlides">
 				<div class="row">
-					<div class="col-md-1"></div>
 					<div class="col-md-5">
-						<%= image_tag("car3.jpg", :alt => "rss feed") %>
+						<div id="insta-images2"></div>
 					</div>	
-					<div class="col-md-5">
+					<div class="col-md-6">
 						<div class="row">
 	        		<p><%= @reviews.second.content %></p>
 	        	</div>
@@ -44,11 +47,10 @@
 			</div>
 			<div class="mySlides">
 				<div class="row">
-					<div class="col-md-1"></div>
 					<div class="col-md-5">
-						<%= image_tag("gallery3.jpg", :alt => "rss ides") %>
+						<div id="insta-images3"></div>
 					</div>	
-					<div class="col-md-5">
+					<div class="col-md-6">
 						<div class="row">
 	        		<p><%= @reviews.third.content %></p>
 	        	</div>
@@ -64,11 +66,10 @@
 			</div>
 			<div class="mySlides">
 				<div class="row">
-					<div class="col-md-1"></div>
 					<div class="col-md-5">
-						<%= image_tag("car5.jpg", :alt => "rss feed") %>
+						<div id="insta-images4"></div>
 					</div>	
-					<div class="col-md-5">
+					<div class="col-md-6">
 						<div class="row">
 	        		<p><%= @reviews.fourth.content %></p>
 	        	</div>
@@ -154,7 +155,6 @@
 </div>
 <script>
 	document.addEventListener('DOMContentLoaded', function () {
-	
 		var myIndex = 0;
 		carousel();
 
@@ -170,5 +170,54 @@
 		    x[myIndex-1].style.display = "inline-block";  
 		    setTimeout(carousel, 3500); 
 		}
+
+		var feed1 = new Instafeed({
+				target: "insta-images1",
+        get: 'user',
+        userId: '<%= ENV['YOUR_USER_ID'] %>',
+        accessToken: '<%= ENV['YOUR_ACCESS_TOKEN'] %>',
+        clientId: '<%= ENV['YOUR_CLIENT_ID'] %>',
+        sortBy: 'most-recent',
+        limit: 4,
+        resolution: 'standard_resolution',
+        template: '<img src="{{image}}" class="hideimage showimage"/>'
+    });
+    var feed2 = new Instafeed({
+				target: "insta-images2",
+        get: 'user',
+        userId: '<%= ENV['YOUR_USER_ID'] %>',
+        accessToken: '<%= ENV['YOUR_ACCESS_TOKEN'] %>',
+        clientId: '<%= ENV['YOUR_CLIENT_ID'] %>',
+        sortBy: 'most-recent',
+        limit: 4,
+        resolution: 'standard_resolution',
+        template: '<img src="{{image}}" class="hideimage showimage2"/>'
+    });
+    var feed3 = new Instafeed({
+				target: "insta-images3",
+        get: 'user',
+        userId: '<%= ENV['YOUR_USER_ID'] %>',
+        accessToken: '<%= ENV['YOUR_ACCESS_TOKEN'] %>',
+        clientId: '<%= ENV['YOUR_CLIENT_ID'] %>',
+        sortBy: 'most-recent',
+        limit: 4,
+        resolution: 'standard_resolution',
+        template: '<img src="{{image}}" class="hideimage showimage3"/>'
+    });
+    var feed4 = new Instafeed({
+				target: "insta-images4",
+        get: 'user',
+        userId: '<%= ENV['YOUR_USER_ID'] %>',
+        accessToken: '<%= ENV['YOUR_ACCESS_TOKEN'] %>',
+        clientId: '<%= ENV['YOUR_CLIENT_ID'] %>',
+        sortBy: 'most-recent',
+        limit: 4,
+        resolution: 'standard_resolution',
+        template: '<img src="{{image}}" class="hideimage showimage4"/>'
+    });
+    feed1.run();
+    feed2.run();
+    feed3.run();
+    feed4.run();
 	});
 </script>
