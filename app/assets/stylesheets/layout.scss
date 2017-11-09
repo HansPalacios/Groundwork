@@ -6,7 +6,7 @@
 p {
 	margin: 0;
 }
-h2, h3, h4, h5, h6, p, pre, li, input, textarea, .actions {
+h2, h3, h4, h5, h6, p, pre, li, input, textarea, .actions, #close {
 	font-family: 'Forum', cursive;
 }
 h1 {
@@ -223,4 +223,72 @@ h2 {
 }
 .movepen {
 	text-align: center;
+}
+#signin, #signin h5 {
+	margin-top: -18px;
+}
+#sibox {
+	width: 60%;
+	height: 60%;
+	background-color: rgba(0,0,0,0.9);
+	border: 2px solid grey;
+	padding: 30px 50px;
+	position: fixed;
+	top: 10%;
+	left: 25%;
+	text-align: center;
+	z-index: 2;
+	color: white;
+	display: none;
+	label, input {
+		margin: 8px auto;
+		font-size: 13px;
+	}
+	h3 {
+		margin-bottom: 20px;
+	}
+	input {
+		color: black;
+	}
+	#close {
+		right: 15px;
+		top: 10px;
+		position: absolute;
+		cursor: pointer;
+		font-size: 20px;
+	}
+	.field {
+		padding: 0;
+	}
+	#signinsubmit input{
+		background-color: white;
+		padding: 1px;
+	}
+}
+.password {
+	margin: 100px;
+	height: 950px;
+	background-color: rgba(0,0,0,.9);
+	text-align: center;
+	.field {
+		padding: 0;
+	}
+	.field, .actions, a {
+		margin-top: 40px;
+	}
+	h2 {
+		padding-top: 50px;
+	}
+	input {
+		margin-top: 10px;
+		padding: 5px;
+		font-size: 15px;
+	}
+	hr {
+		margin-top: 100px;
+	}
+	label {
+		color: white;
+		font-size: 18px;
+	}
 }

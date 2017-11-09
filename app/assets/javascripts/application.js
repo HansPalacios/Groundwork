@@ -12,3 +12,19 @@
 //
 //= require rails-ujs
 //= require_tree .
+document.addEventListener('DOMContentLoaded', function () {
+	var signin = document.getElementById( 'signin' )
+	var sibox = document.getElementById( 'sibox' )
+	var close = document.getElementById( 'close' )
+
+
+if( signin )
+	signin.addEventListener('click', function(){
+	    sibox.style.display = 'inline-block';
+	});
+
+	if( close )
+	close.addEventListener('click', function() {
+			sibox.style.display = 'none';
+	});
+});

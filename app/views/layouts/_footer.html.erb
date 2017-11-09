@@ -1,14 +1,40 @@
 <footer class="container-fluid">	
 	<div class="row">
-		<div class="col-md-4">
+		<div class="col-md-3">
 			<a href="https://www.facebook.com/groundworkdetailing/" target="_blank"/><%= image_tag("bwfb.png", :alt => "rss feed") %></a>
 			<a href="https://www.instagram.com/groundworkdetailing/" target="_blank"/><%= image_tag("bwinsta.png", :alt => "rss feed") %></a>
 			<a href="https://twitter.com/search?q=%40Gworkdetailing&src=typd" target="_blank" ><%= image_tag("bwtwitter.png", :alt => "rss feed") %></a>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-6">
 			<h5>Manchester, CT</h5>
 		</div>
-		<div class="col-md-4 mylink">
+		
+		<div class="col-md-1 mylink">
+			<a href="#" id="signin"><h5><strong>Admin<br>Log In</strong></h5></a>
+				<div id="sibox">
+					<h2>Admin Log In</h2>
+					<div id="close">x</div>
+					<%= form_for(:user, :url => new_user_session_path) do |f| %>
+				    <div class="field">
+				      <%= f.label :email %><br />
+				      <%= f.email_field :email, autofocus: true %>
+				    </div>
+				    <div class="field">
+				      <%= f.label :password %><br />
+				      <%= f.password_field :password, autocomplete: "off" %>
+				    </div>
+				    <div class="field">
+				      <%= f.check_box :remember_me %>
+				      <%= f.label :remember_me %>
+				    </div>
+				    <div class="actions" id="signinsubmit">
+				        <%= f.submit "Log in", :class => "button" %>
+				    </div>
+				    <%= link_to "Forgot your password?", new_password_path(:user) %>
+					<% end %>
+				</div>
+		</div>
+		<div class="col-md-2 mylink">
 			<h5>Website developed by</h5>
 			<a href="https://www.hspalacios.com" target="_blank" >Hans Palacios</a>
 		</div>
