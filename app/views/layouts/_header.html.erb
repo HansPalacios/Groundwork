@@ -9,9 +9,6 @@
 					    <a href="/pricing">Pricing</a>
 					    <a href="/reviews">Reviews</a>
 					    <a href="/about">Our Mission</a>
-					    <% if user_signed_in? %>
-								<%= link_to "Sign Out", destroy_user_session_path, method: :delete, :id => 'signout' %>
-							<% end %>
 					  </div>
 					</div>
 				</div>
