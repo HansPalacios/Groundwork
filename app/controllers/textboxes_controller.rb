@@ -5,6 +5,7 @@ class TextboxesController < ApplicationController
   # GET /textboxes.json
   def index
     @textboxes = Textbox.all
+    @users = User.all
   end
 
   # GET /textboxes/1

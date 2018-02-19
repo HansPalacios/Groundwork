@@ -97,6 +97,14 @@ Textbox.create([
 	{id: 78, content: "Our mission is to give you a unique experience when it comes to maintaining one of your largest investments; your car! There are plenty of professional detailers, but only one can give you the Groundwork Experience! We've set a high standard for ourselves when it comes to customer satisfaction. Whether it's mechanical, cosmetic, or consulting, we're your go-to team! Our passion is your car, you won't have to worry when it's in our hands."},
 	{id: 79, content: "Founded by Ryan Viera, a father and entreprenuer, who started with a simple headlight restoration service. And has since built it into a full service auto detailing company which only continues to grow."},
 	{id: 80, content: "Come join the family, call us at"},
-	{id: 81, content: "to book an appointment today"}
+	{id: 81, content: "to book an appointment today"},
+	{id: 82, content: "Log In"},
+	{id: 83, content: ""},
+	{id: 84, content: ""},
+	{id: 85, content: ""},
+	{id: 86, content: ""},
+	{id: 87, content: ""},
+	{id: 88, content: ""},
+	{id: 89, content: ""}
 	])
 

@@ -1,6 +1,58 @@
-@media only screen and (max-width: 768px) {
-  body  {
-  	min-height: 100%;
-  	width: auto;
-  }
+@media only screen and (max-width: 770px) {
+	.mobileshow {
+		display: inline-block;
+	}
+	.mobilehide {
+		display: none;
+	}
+	#recentclients #gallery .mySlides {
+		height: 500px;
+		.col-md-6, .col-md-5 {
+			height: 100%;
+		}
+		img {
+			
+			margin-left: 5%;
+			margin-top: -20px;
+			max-width: 40%;
+			max-height: 100%;
+			width: auto;
+  		height: auto;
+			float: left;
+
+		}
+		p {
+			width: 40%;
+			height: 150px;
+			position: absolute;
+			right: 5%;
+			top: -278.5px;
+			padding: 0;
+			overflow: scroll;
+			padding: 5px;
+		}
+		h5 {
+			position: absolute;
+			right: 5%;
+			top: -128.5px;
+			height: 40px;
+			width: 40%;
+			text-align: right;
+			padding: 10px;
+			padding-right: 50px;
+			font-weight: 900;
+		}
+		a {
+			position: absolute;
+			right: 15%;
+			bottom: 10px;
+		}
+	}
+	#services {
+		hr {
+			height: 2px;
+			background-color: black;
+			width: 90%;
+		}
+	}
 }

@@ -127,10 +127,13 @@
 	</div>
 	<hr>
 	<div class="row">
+		<div class="col-md-5 mobileshow">
+			<%= image_tag("boat.png", :alt => "rss feed") %>
+		</div>
 		<div class="col-md-7">
 			<p><%= render '/layouts/clicktoedit', number: 6 %></p>
 		</div>
-		<div class="col-md-5">
+		<div class="col-md-5 mobilehide">
 			<%= image_tag("boat.png", :alt => "rss feed") %>
 		</div>
 	</div>	
@@ -145,10 +148,13 @@
 	</div>	
 	<hr>	
 	<div class="row">
+		<div class="col-md-5 mobileshow">
+			<%= image_tag("fleet.png", :alt => "rss feed") %>
+		</div>
 		<div class="col-md-7">
 			<p><%= render '/layouts/clicktoedit', number: 8 %></p>
 		</div>
-		<div class="col-md-5">
+		<div class="col-md-5 mobilehide">
 			<%= image_tag("fleet.png", :alt => "rss feed") %>
 		</div>
 	</div>		
