@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'uploads/new'
+
+  get 'uploads/create'
+
+  get 'uploads/index'
+  
+  root 'uploads#new'
+
   resources :lists
   resources :textboxes
   resources :reviews

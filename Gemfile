@@ -4,6 +4,8 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
+#AWS picture upload
+gem 'aws-sdk-v1'
 # ENV variables
 gem 'figaro'
 # Using Devise for a secure login form
@@ -11,8 +13,8 @@ gem 'devise'
 gem 'modernizr-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
-# Use sqlite3 as the database for Active Record
-gem 'pg'
+# # Use sqlite3 as the database for Active Record
+# gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -39,6 +41,7 @@ gem 'jbuilder', '~> 2.5'
 #  group :assets do
 #   gem 'modernizr-rails'
 # end
+gem 'pg'
 group :production do
   gem 'pg'
 end
@@ -61,5 +64,5 @@ group :development do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # ruby "2.4.1"
