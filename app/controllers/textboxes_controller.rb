@@ -1,4 +1,5 @@
 class TextboxesController < ApplicationController
+  encoding: utf-8
   before_action :set_textbox, only: [:show, :edit, :update, :destroy]
 
   # GET /textboxes
