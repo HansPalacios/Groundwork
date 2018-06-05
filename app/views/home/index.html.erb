@@ -94,13 +94,13 @@
 	<hr>
 	<div class="row">
 		<div class="col-md-5">
-			<%= image_tag("ferrari.png", :alt => "rss feed") %>
+			<%= image_tag("https://s3.us-east-2.amazonaws.com/groundworkdetailing/ferrari.png", :alt => "rss feed") %>
 		</div>
 		<div class="col-md-7">
 			<a href="/pricing"><p><%= @textboxes.find(4).content %></p></a>
 			<% if user_signed_in? %>
 				<a data-toggle="modal" data-target="#editmodal<%= @textboxes.find(4).id %>">
-					<%= image_tag "editpen.png", :class => "editpen" %>
+					<%= image_tag "https://s3.us-east-2.amazonaws.com/groundworkdetailing/editpen.png", :class => "editpen" %>
 				</a>
 
 				<div class="modal fade" id="editmodal<%= @textboxes.find(4).id%>" role="dialog" aria-hidden="true">
@@ -128,19 +128,19 @@
 	<hr>
 	<div class="row">
 		<div class="col-md-5 mobileshow">
-			<%= image_tag("boat.png", :alt => "rss feed") %>
+			<%= image_tag("https://s3.us-east-2.amazonaws.com/groundworkdetailing/boat.png", :alt => "rss feed") %>
 		</div>
 		<div class="col-md-7">
 			<p><%= render '/layouts/clicktoedit', number: 6 %></p>
 		</div>
 		<div class="col-md-5 mobilehide">
-			<%= image_tag("boat.png", :alt => "rss feed") %>
+			<%= image_tag("https://s3.us-east-2.amazonaws.com/groundworkdetailing/boat.png", :alt => "rss feed") %>
 		</div>
 	</div>	
 	<hr>
 	<div class="row">
 		<div class="col-md-5">
-			<%= image_tag("plane.png", :alt => "rss feed") %>
+			<%= image_tag("https://s3.us-east-2.amazonaws.com/groundworkdetailing/plane.png", :alt => "rss feed") %>
 		</div>
 		<div class="col-md-7">
 			<p><%= render '/layouts/clicktoedit', number: 7 %></p>
@@ -149,13 +149,13 @@
 	<hr>	
 	<div class="row">
 		<div class="col-md-5 mobileshow">
-			<%= image_tag("fleet.png", :alt => "rss feed") %>
+			<%= image_tag("https://s3.us-east-2.amazonaws.com/groundworkdetailing/fleet.png", :alt => "rss feed") %>
 		</div>
 		<div class="col-md-7">
 			<p><%= render '/layouts/clicktoedit', number: 8 %></p>
 		</div>
 		<div class="col-md-5 mobilehide">
-			<%= image_tag("fleet.png", :alt => "rss feed") %>
+			<%= image_tag("https://s3.us-east-2.amazonaws.com/groundworkdetailing/fleet.png", :alt => "rss feed") %>
 		</div>
 	</div>		
 </div>
