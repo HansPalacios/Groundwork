@@ -1,5 +1,4 @@
 class ReviewsController < ApplicationController
-  encoding: utf-8
   before_action :set_review, only: [:show, :edit, :update, :destroy]
 
   # GET /reviews

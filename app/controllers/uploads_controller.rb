@@ -1,5 +1,4 @@
 class UploadsController < ApplicationController
-  encoding: utf-8
   def new
   end
 
