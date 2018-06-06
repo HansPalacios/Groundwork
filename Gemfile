@@ -42,12 +42,12 @@ gem 'jbuilder', '~> 2.5'
 #  group :assets do
 #   gem 'modernizr-rails'
 # end
-  # gem 'pg'
-group :production do
   gem 'pg'
+group :production do
+  # gem 'pg'
 end
 group :development, :test do
-  gem 'sqlite3'
+  # gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
