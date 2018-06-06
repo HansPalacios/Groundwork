@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   get 'uploads/index'
   
-  root 'uploads#new'
+  
 
   resources :lists
   resources :textboxes
