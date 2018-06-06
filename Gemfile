@@ -42,7 +42,7 @@ gem 'jbuilder', '~> 2.5'
 #  group :assets do
 #   gem 'modernizr-rails'
 # end
-  gem 'pg'
+  # gem 'pg'
 group :production do
   gem 'pg'
 end
