@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  get 'uploads/new'
+  # get 'uploads/new'
 
-  get 'uploads/create'
+  # get 'uploads/create'
 
-  get 'uploads/index'
+  # get 'uploads/index'
   
   
 
