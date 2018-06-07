@@ -43,6 +43,8 @@ gem 'jbuilder', '~> 2.5'
 #   gem 'modernizr-rails'
 # end
   gem 'pg'
+  gem 'therubyracer'
+  gem 'less-rails-bootstrap'
 group :production do
   gem 'pg'
 end
