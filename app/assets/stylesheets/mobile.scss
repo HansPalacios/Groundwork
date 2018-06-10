@@ -65,14 +65,14 @@
 				
 			}
 			p {
-				width: 90%;
+				width: 80%;
 				overflow: scroll;
 				padding: 5px;
 				display: block;
 				margin: 0 auto;
 			}
 			h5 {
-				width: 90%;
+				width: 80%;
 				text-align: right;
 				padding: 10px;
 				font-weight: 900;
@@ -90,6 +90,10 @@
 			height: 2px;
 			background-color: black;
 			width: 90%;
+		}
+		p {
+			font-size: 15px;
+			margin-top: 10px;
 		}
 	}
 
