@@ -5,12 +5,18 @@
 	.mobilehide {
 		display: none;
 	}
-	.dropdown img{
+	.dropdown {
+		img{
 		display: block;
-		margin: 20px;
-		top: -50px;
-		right: -100px;
-		position: absolute;
+			margin: 20px;
+			top: -50px;
+			right: -100px;
+			position: absolute;
+		}
+		.dropdown-content {
+			right: -78px;
+			top: 10px;
+		}
 	}
 	body {
 		background-color: rgba(20,20,20,1);
