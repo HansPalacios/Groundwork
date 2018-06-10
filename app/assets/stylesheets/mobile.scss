@@ -44,6 +44,9 @@
 
 	div#pricing {
 		padding-bottom: 0;
+		.pricebox {
+			background-color: rgba(250,250,250,1);
+		}
 		.margin {
 			margin-left: 0px;
 			margin: 20px;
@@ -90,6 +93,7 @@
 		}
 	}
 	#services {
+		background-color: rgba(250,250,250,1);
 		hr {
 			height: 2px;
 			background-color: black;
@@ -102,11 +106,13 @@
 	}
 
 	#reviews {
+		background-color: rgba(250,250,250,1);
 		div.eachreview {
 			width: 90%;
 		}
 	}
 	#about, #about2, #about3 {
+		background-color: rgba(250,250,250,1);
 		p {
 			width: auto;
 			text-align: center;
