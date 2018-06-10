@@ -2,4 +2,8 @@
   "name": "GroundworkDetailing",
   "private": true,
   "dependencies": {}
+  "scripts": {
+	  "postinstall": "bower install && grunt build",
+	  "start": "nf start"
+	}
 }
