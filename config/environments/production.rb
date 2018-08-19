@@ -34,6 +34,7 @@ Rails.application.configure do
 
   config.assets.compile = false
 
+
   config.secret_key_base = ENV["SECRET_KEY_BASE"]
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
