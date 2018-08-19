@@ -103,6 +103,9 @@ footer {
   left: 0;
   right: 0;
   margin: 0;
+  strong {
+  	margin: 5% auto;
+  }
 	h5 {
 	color: white;
 	margin: 0;
@@ -114,7 +117,7 @@ footer {
 	}
 	img {
 		width: 10%;
-
+		margin: 5% ;
 	}
 	.mylink {
 		h5, a {
@@ -225,7 +228,7 @@ h2 {
 	text-align: center;
 }
 #signin, #signin h5 {
-	margin-top: -18px;
+	// margin-top: -18px;
 }
 #sibox {
 	width: 350px;
