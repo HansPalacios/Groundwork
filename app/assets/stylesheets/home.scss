@@ -9,6 +9,7 @@
 }
 #recentclients {
 	background-color: rgba(0,0,0,.7);
+	height: 350px;
   .hideimage {
   	display: none;
   }
@@ -30,9 +31,13 @@
 	}
 	.title {
 		height: 100px;
+		text-align: center;
 		h2 {
 			text-align: center;
-			marginf: 0 auto;
+			margin: 0 auto;
+		}
+		a {
+			margin: 0 auto;
 		}
 	}
 	.col-md-5, .col-sm-5, .col-xs-5 {
@@ -45,10 +50,10 @@
 		text-align: center;
 		.mySlides {
 			width: 96%;
-			margin-left: 16px;
+			margin-left: 10px;
 			display: none;
 		  .slideheight {
-		  	height: 280px;
+		  	height: 350px;
 		  }
 		  img {
 		  	max-height: 200px;

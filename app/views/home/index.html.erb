@@ -1,18 +1,18 @@
 <div class="row" id="recentclients">
 	<div class="col-md-12 tint">
-		<div class="row title">
-			<div class="col-md-5 col-sm-5 col-xs-5"><a href="https://www.instagram.com/groundworkdetailing/" target="_blank"><h2>Instagram</h2></a></div>
-			<div class="col-md-7 col-sm-7 col-xs-7">
-				<h2>Recent Clients</h2>
-			</div>
-		</div>
 		<div class="row" id="gallery">
 			<div class="mySlides">
 				<div class="row slideheight">
-					<div class="col-md-5 col-sm-5 col-xs-5">
-						<div id="insta-images1"></div>
+					<div class="col-md-5">
+						<div class="row title">
+							<a href="https://www.instagram.com/groundworkdetailing/" target="_blank"><h2>Instagram</h2></a>
+						</div>
+						<div class="row" id="insta-images1"></div>
 					</div>	
-					<div class="col-md-7 col-sm-7 col-xs-7">
+					<div class="col-md-7">
+						<div class="row title">
+							<h2>Recent Clients</h2>
+						</div>
 						<div class="row">
 	        		<p><%= @reviews.first.content %></p>
 	        	</div>
@@ -27,10 +27,16 @@
 			</div>
 			<div class="mySlides">
 				<div class="row slideheight">
-					<div class="col-md-5 col-sm-5 col-xs-5">
-						<div id="insta-images2"></div>
+					<div class="col-md-5">
+						<div class="row title">
+							<a href="https://www.instagram.com/groundworkdetailing/" target="_blank"><h2>Instagram</h2></a>
+						</div>
+						<div class="row" id="insta-images2"></div>
 					</div>	
-					<div class="col-md-7 col-sm-7 col-xs-7">
+					<div class="col-md-7">
+						<div class="row title">
+							<h2>Recent Clients</h2>
+						</div>
 						<div class="row">
 	        		<p><%= @reviews.second.content %></p>
 	        	</div>
@@ -45,10 +51,16 @@
 			</div>
 			<div class="mySlides">
 				<div class="row slideheight">
-					<div class="col-md-5 col-sm-5 col-xs-5">
-						<div id="insta-images3"></div>
+					<div class="col-md-5">
+						<div class="row title">
+							<a href="https://www.instagram.com/groundworkdetailing/" target="_blank"><h2>Instagram</h2></a>
+						</div>
+						<div class="row" id="insta-images3"></div>
 					</div>	
-					<div class="col-md-7 col-sm-7 col-xs-7">
+					<div class="col-md-7">
+						<div class="row title">
+							<h2>Recent Clients</h2>
+						</div>
 						<div class="row">
 	        		<p><%= @reviews.third.content %></p>
 	        	</div>
@@ -63,10 +75,16 @@
 			</div>
 			<div class="mySlides">
 				<div class="row slideheight">
-					<div class="col-md-5 col-sm-5 col-xs-5">
-						<div id="insta-images4"></div>
+					<div class="col-md-5">
+						<div class="row title">
+							<a href="https://www.instagram.com/groundworkdetailing/" target="_blank"><h2>Instagram</h2></a>
+						</div>
+						<div class="row" id="insta-images4"></div>
 					</div>	
-					<div class="col-md-7 col-sm-7 col-xs-7">
+					<div class="col-md-7">
+						<div class="row title">
+							<h2>Recent Clients</h2>
+						</div>
 						<div class="row">
 	        		<p><%= @reviews.fourth.content %></p>
 	        	</div>
@@ -89,10 +107,10 @@
 	</div>
 	<hr>
 	<div class="row">
-		<div class="col-md-5 col-sm-5 col-xs-5">
+		<div class="col-md-5">
 			<%= image_tag("https://s3.us-east-2.amazonaws.com/groundworkdetailing/ferrari.png", :alt => "rss feed") %>
 		</div>
-		<div class="col-md-7 col-sm-7 col-xs-7">
+		<div class="col-md-7">
 			<a href="/pricing"><p><%= @textboxes.find(4).content %></p></a>
 			<% if user_signed_in? %>
 				<a data-toggle="modal" data-target="#editmodal<%= @textboxes.find(4).id %>">
@@ -123,34 +141,34 @@
 	</div>
 	<hr>
 	<div class="row">
-		<div class="col-md-5 col-sm-5 col-xs-5 mobileshow">
+		<div class="col-md-5 mobileshow">
 			<%= image_tag("https://s3.us-east-2.amazonaws.com/groundworkdetailing/boat.png", :alt => "rss feed") %>
 		</div>
-		<div class="col-md-7 col-sm-7 col-xs-7">
+		<div class="col-md-7">
 			<p><%= render '/layouts/clicktoedit', number: 6 %></p>
 		</div>
-		<div class="col-md-5 col-sm-5 col-xs-5 mobilehide">
+		<div class="col-md-5 mobilehide">
 			<%= image_tag("https://s3.us-east-2.amazonaws.com/groundworkdetailing/boat.png", :alt => "rss feed") %>
 		</div>
 	</div>	
 	<hr>
 	<div class="row">
-		<div class="col-md-5 col-sm-5 col-xs-5">
+		<div class="col-md-5">
 			<%= image_tag("https://s3.us-east-2.amazonaws.com/groundworkdetailing/plane.png", :alt => "rss feed") %>
 		</div>
-		<div class="col-md-7 col-sm-7 col-xs-7">
+		<div class="col-md-7">
 			<p><%= render '/layouts/clicktoedit', number: 7 %></p>
 		</div>
 	</div>	
 	<hr>	
 	<div class="row">
-		<div class="col-md-5 col-sm-5 col-xs-5 mobileshow">
+		<div class="col-md-5 mobileshow">
 			<%= image_tag("https://s3.us-east-2.amazonaws.com/groundworkdetailing/fleet.png", :alt => "rss feed") %>
 		</div>
-		<div class="col-md-7 col-sm-7 col-xs-7">
+		<div class="col-md-7">
 			<p><%= render '/layouts/clicktoedit', number: 8 %></p>
 		</div>
-		<div class="col-md-5 col-sm-5 col-xs-5 mobilehide">
+		<div class="col-md-5 mobilehide">
 			<%= image_tag("https://s3.us-east-2.amazonaws.com/groundworkdetailing/fleet.png", :alt => "rss feed") %>
 		</div>
 	</div>		
