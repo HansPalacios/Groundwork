@@ -1,18 +1,18 @@
 <div class="row" id="recentclients">
 	<div class="col-md-12 tint">
-		<div class="row">
-			<div class="col-md-5"></div>
-			<div class="col-md-6">
-				<h1>Recent Clients</h1>
+		<div class="row title">
+			<div class="col-md-5 col-sm-5 col-xs-5"><a href="https://www.instagram.com/groundworkdetailing/" target="_blank"><h2>Instagram</h2></a></div>
+			<div class="col-md-7 col-sm-7 col-xs-7">
+				<h2>Recent Clients</h2>
 			</div>
 		</div>
 		<div class="row" id="gallery">
 			<div class="mySlides">
-				<div class="row">
-					<div class="col-md-5">
+				<div class="row slideheight">
+					<div class="col-md-5 col-sm-5 col-xs-5">
 						<div id="insta-images1"></div>
 					</div>	
-					<div class="col-md-6">
+					<div class="col-md-7 col-sm-7 col-xs-7">
 						<div class="row">
 	        		<p><%= @reviews.first.content %></p>
 	        	</div>
@@ -23,15 +23,14 @@
 	        		<a href="/reviews" class="button">...more reviews</a>
 	        	</div>
 					</div>
-					<div class="col-md-1"></div>
 				</div>
 			</div>
 			<div class="mySlides">
-				<div class="row">
-					<div class="col-md-5">
+				<div class="row slideheight">
+					<div class="col-md-5 col-sm-5 col-xs-5">
 						<div id="insta-images2"></div>
 					</div>	
-					<div class="col-md-6">
+					<div class="col-md-7 col-sm-7 col-xs-7">
 						<div class="row">
 	        		<p><%= @reviews.second.content %></p>
 	        	</div>
@@ -42,15 +41,14 @@
 	        		<a href="/reviews" class="button">...more reviews</a>
 	        	</div>
 					</div>
-					<div class="col-md-1"></div>
 				</div>
 			</div>
 			<div class="mySlides">
-				<div class="row">
-					<div class="col-md-5">
+				<div class="row slideheight">
+					<div class="col-md-5 col-sm-5 col-xs-5">
 						<div id="insta-images3"></div>
 					</div>	
-					<div class="col-md-6">
+					<div class="col-md-7 col-sm-7 col-xs-7">
 						<div class="row">
 	        		<p><%= @reviews.third.content %></p>
 	        	</div>
@@ -61,15 +59,14 @@
 	        		<a href="/reviews" class="button">...more reviews</a>
 	        	</div>
 					</div>
-					<div class="col-md-1"></div>
 				</div>
 			</div>
 			<div class="mySlides">
-				<div class="row">
-					<div class="col-md-5">
+				<div class="row slideheight">
+					<div class="col-md-5 col-sm-5 col-xs-5">
 						<div id="insta-images4"></div>
 					</div>	
-					<div class="col-md-6">
+					<div class="col-md-7 col-sm-7 col-xs-7">
 						<div class="row">
 	        		<p><%= @reviews.fourth.content %></p>
 	        	</div>
@@ -80,7 +77,6 @@
 	        		<a href="/reviews" class="button">...more reviews</a>
 	        	</div>
 					</div>
-					<div class="col-md-1"></div>
 				</div>
 			</div>
 		</div>
@@ -93,10 +89,10 @@
 	</div>
 	<hr>
 	<div class="row">
-		<div class="col-md-5">
+		<div class="col-md-5 col-sm-5 col-xs-5">
 			<%= image_tag("https://s3.us-east-2.amazonaws.com/groundworkdetailing/ferrari.png", :alt => "rss feed") %>
 		</div>
-		<div class="col-md-7">
+		<div class="col-md-7 col-sm-7 col-xs-7">
 			<a href="/pricing"><p><%= @textboxes.find(4).content %></p></a>
 			<% if user_signed_in? %>
 				<a data-toggle="modal" data-target="#editmodal<%= @textboxes.find(4).id %>">
@@ -127,34 +123,34 @@
 	</div>
 	<hr>
 	<div class="row">
-		<div class="col-md-5 mobileshow">
+		<div class="col-md-5 col-sm-5 col-xs-5 mobileshow">
 			<%= image_tag("https://s3.us-east-2.amazonaws.com/groundworkdetailing/boat.png", :alt => "rss feed") %>
 		</div>
-		<div class="col-md-7">
+		<div class="col-md-7 col-sm-7 col-xs-7">
 			<p><%= render '/layouts/clicktoedit', number: 6 %></p>
 		</div>
-		<div class="col-md-5 mobilehide">
+		<div class="col-md-5 col-sm-5 col-xs-5 mobilehide">
 			<%= image_tag("https://s3.us-east-2.amazonaws.com/groundworkdetailing/boat.png", :alt => "rss feed") %>
 		</div>
 	</div>	
 	<hr>
 	<div class="row">
-		<div class="col-md-5">
+		<div class="col-md-5 col-sm-5 col-xs-5">
 			<%= image_tag("https://s3.us-east-2.amazonaws.com/groundworkdetailing/plane.png", :alt => "rss feed") %>
 		</div>
-		<div class="col-md-7">
+		<div class="col-md-7 col-sm-7 col-xs-7">
 			<p><%= render '/layouts/clicktoedit', number: 7 %></p>
 		</div>
 	</div>	
 	<hr>	
 	<div class="row">
-		<div class="col-md-5 mobileshow">
+		<div class="col-md-5 col-sm-5 col-xs-5 mobileshow">
 			<%= image_tag("https://s3.us-east-2.amazonaws.com/groundworkdetailing/fleet.png", :alt => "rss feed") %>
 		</div>
-		<div class="col-md-7">
+		<div class="col-md-7 col-sm-7 col-xs-7">
 			<p><%= render '/layouts/clicktoedit', number: 8 %></p>
 		</div>
-		<div class="col-md-5 mobilehide">
+		<div class="col-md-5 col-sm-5 col-xs-5 mobilehide">
 			<%= image_tag("https://s3.us-east-2.amazonaws.com/groundworkdetailing/fleet.png", :alt => "rss feed") %>
 		</div>
 	</div>		
@@ -186,7 +182,7 @@
         sortBy: 'most-recent',
         limit: 4,
         resolution: 'standard_resolution',
-        template: '<img src="{{image}}" class="hideimage showimage"/>'
+        template: '<a href="{{link}}" target="_blank" class="hideimage showimage"><div class="row"><img src="{{image}}" ></div><div class="row caption"><p>{{caption}}</p></div></a>'
     });
     var feed2 = new Instafeed({
 				target: "insta-images2",
@@ -197,7 +193,7 @@
         sortBy: 'most-recent',
         limit: 4,
         resolution: 'standard_resolution',
-        template: '<img src="{{image}}" class="hideimage showimage2"/>'
+        template: '<a href="{{link}}" target="_blank" class="hideimage showimage2"><div class="row"><img src="{{image}}" /></div><div class="row caption"><p>{{caption}}</p></div></a>'
     });
     var feed3 = new Instafeed({
 				target: "insta-images3",
@@ -208,7 +204,7 @@
         sortBy: 'most-recent',
         limit: 4,
         resolution: 'standard_resolution',
-        template: '<img src="{{image}}" class="hideimage showimage3"/>'
+        template: '<a href="{{link}}" target="_blank" class="hideimage showimage3"><div class="row"><img src="{{image}}" /></div><div class="row caption"><p>{{caption}}</p></div></a>'
     });
     var feed4 = new Instafeed({
 				target: "insta-images4",
@@ -219,7 +215,7 @@
         sortBy: 'most-recent',
         limit: 4,
         resolution: 'standard_resolution',
-        template: '<img src="{{image}}" class="hideimage showimage4"/>'
+        template: '<a href="{{link}}" target="_blank" class="hideimage showimage4"><div class="row"><img src="{{image}}" /></div><div class="row caption"><p>{{caption}}</p></div></a>'
     });
     feed1.run();
     feed2.run();

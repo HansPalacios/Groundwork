@@ -31,8 +31,8 @@
 	}
 	
 	body {
-		background-color: rgba(20,20,20,1);
-		background: none;
+		// background-color: rgba(20,20,20,1);
+		// background: none;
 	}
 
 	footer {
@@ -59,7 +59,8 @@
 	}
 
 	#recentclients {
-		height: 620px;
+		// height: 620px;
+		padding: 5%;
 		#gallery .mySlides {
 			height: auto;
 			.col-md-6, .col-md-5 {
@@ -89,7 +90,7 @@
 				font-size: 12px;
 				font-weight: 900;
 			}
-			a {
+			a.button {
 				margin: 25px auto;
 				display: block;
 			}
