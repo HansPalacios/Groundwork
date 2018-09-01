@@ -8,11 +8,7 @@
 	display: none;
 }
 #recentclients {
-	// background: url('https://s3.us-east-2.amazonaws.com/groundworkdetailing/IMG_3336.JPG');
 	background-color: rgba(0,0,0,.7);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   .hideimage {
   	display: none;
   }
@@ -49,7 +45,7 @@
 		text-align: center;
 		.mySlides {
 			width: 96%;
-			margin-left: 14px;
+			margin-left: 16px;
 			display: none;
 		  .slideheight {
 		  	height: 280px;
