@@ -6919,10 +6919,6 @@ button.close {
 #recentclients .showimage:nth-child(1), #recentclients .showimage2:nth-child(2), #recentclients .showimage3:nth-child(3), #recentclients .showimage4:nth-child(4) {
   display: inline-block;
 }
-/* line 23, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
-#recentclients .tint {
-  height: 100%;
-}
 /* line 27, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
 #recentclients h1 {
   margin: 20px auto 10px auto;
@@ -6955,20 +6951,22 @@ button.close {
 }
 /* line 50, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
 #recentclients #gallery .mySlides {
-  width: 100%;
+  width: 96%;
+  margin-left: 14px;
   display: none;
 }
-/* line 53, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
+/* line 54, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
 #recentclients #gallery .mySlides .slideheight {
   height: 280px;
 }
-/* line 56, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
+/* line 57, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
 #recentclients #gallery .mySlides img {
   max-height: 200px;
-  max-width: 80%;
+  max-width: 70%;
+  width: auto;
   margin: 0 auto;
 }
-/* line 61, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
+/* line 63, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
 #recentclients #gallery .mySlides p {
   text-align: center;
   padding: 20px;
@@ -6977,19 +6975,19 @@ button.close {
   font-weight: 900;
   background-color: rgba(250, 250, 250, 0.8);
 }
-/* line 69, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
+/* line 71, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
 #recentclients #gallery .mySlides .caption p {
   margin: 5px auto;
   text-align: center;
   padding: 5px;
-  color: white;
+  color: #dadada;
   background-color: rgba(0, 0, 0, 0);
   font-size: 13px;
-  width: 70%;
+  width: 60%;
   height: 40px;
   overflow: hidden;
 }
-/* line 80, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
+/* line 82, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
 #recentclients #gallery .mySlides h5 {
   text-align: right;
   padding-right: 120px;
@@ -6998,30 +6996,30 @@ button.close {
   background-color: rgba(250, 250, 250, 0.8);
   margin: 0;
 }
-/* line 88, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
+/* line 90, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
 #recentclients #gallery .mySlides .button {
   background-color: rgba(250, 250, 250, 0.3);
 }
-/* line 90, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
+/* line 92, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
 #recentclients #gallery .mySlides .button:hover {
   background-color: rgba(250, 250, 250, 0.6);
 }
 
-/* line 100, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
+/* line 102, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
 .links {
   width: 30%;
   margin: 0 auto;
   text-align: center;
   padding-bottom: 30px;
 }
-/* line 105, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
+/* line 107, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
 .links .medialink, .links a {
   height: 30px;
   margin: 0 auto;
   pointer: cursor;
 }
 
-/* line 112, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
+/* line 114, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
 #services {
   min-height: 100%;
   margin: 0;
@@ -7030,38 +7028,38 @@ button.close {
   padding: 3%;
   padding-top: 20px;
 }
-/* line 119, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
+/* line 121, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
 #services .row {
   margin: 10px 0;
   width: 100%;
   padding: 20px;
 }
-/* line 124, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
+/* line 126, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
 #services .title {
   background-color: rgba(0, 0, 0, 0);
 }
-/* line 127, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
+/* line 129, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
 #services hr {
   border-top: 1px solid #5a5a5a;
   width: 60%;
   margin: 10px auto;
 }
-/* line 132, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
+/* line 134, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
 #services h1 {
   font-weight: 900;
   text-shadow: 1px 1px darkgrey;
 }
-/* line 137, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
+/* line 139, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
 #services p, #services h1, #services h2, #services h3, #services a, #services h4, #services h5, #services li {
   color: black;
   margin: 0 auto;
 }
-/* line 141, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
+/* line 143, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
 #services img {
   max-width: 100%;
   max-height: 200px;
 }
-/* line 145, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
+/* line 147, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
 #services p {
   height: auto;
   width: 70%;
@@ -7069,7 +7067,7 @@ button.close {
   font-weight: 900;
   display: inline-block;
 }
-/* line 152, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
+/* line 154, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/home.scss */
 #services a p {
   color: #790b0b;
   margin-bottom: 10px;
@@ -7505,51 +7503,6 @@ h2 {
   /* line 56, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/mobile.scss */
   div#pricing .col-md-7 {
     margin: 20px;
-  }
-
-  /* line 61, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/mobile.scss */
-  #recentclients {
-    padding: 5%;
-  }
-  /* line 64, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/mobile.scss */
-  #recentclients #gallery .mySlides {
-    height: auto;
-  }
-  /* line 66, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/mobile.scss */
-  #recentclients #gallery .mySlides .col-md-6, #recentclients #gallery .mySlides .col-md-5 {
-    height: 100%;
-  }
-  /* line 69, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/mobile.scss */
-  #recentclients #gallery .mySlides img {
-    margin: -20px auto 20px auto;
-    height: 200px;
-    width: auto;
-  }
-  /* line 74, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/mobile.scss */
-  #recentclients #gallery .mySlides p {
-    width: 80%;
-    overflow: scroll;
-    padding: 15px;
-    padding-bottom: 0;
-    display: block;
-    margin: 0 auto;
-    font-size: 12px;
-  }
-  /* line 83, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/mobile.scss */
-  #recentclients #gallery .mySlides h5 {
-    width: 80%;
-    text-align: right;
-    padding: 10px;
-    font-weight: 900;
-    display: block;
-    margin: 0 auto;
-    font-size: 12px;
-    font-weight: 900;
-  }
-  /* line 93, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/mobile.scss */
-  #recentclients #gallery .mySlides a.button {
-    margin: 25px auto;
-    display: block;
   }
 
   /* line 99, /Users/hans-sebastianpalacios/Desktop/Sites/Groundwork/app/assets/stylesheets/mobile.scss */
