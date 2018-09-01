@@ -65,7 +65,11 @@
 		background: url('https://s3.us-east-2.amazonaws.com/groundworkdetailing/IMG_3336.JPG');
 		background-position: center;
  	 	background-repeat: no-repeat;
- 	 	background-size: cover;background-color: none;
+ 	 	background-size: cover;
+ 	 	background-color: none;
+ 	 	.tint {
+ 	 		margin-top: -15px;
+ 	 	}
 		.col-md-5, .col-sm-5, .col-xs-5 {
 				background-color: rgba(0,0,0,.7);
 				padding-bottom: 20px;
@@ -74,6 +78,7 @@
 				margin-bottom: 20px;
 			}
 		#gallery .mySlides {
+			width: 100%;
 			height: auto;
 			margin-left: 15px;
 			margin-top: 0;
