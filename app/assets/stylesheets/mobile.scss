@@ -69,10 +69,11 @@
  	 	background-color: none;
  	 	.tint {
  	 		// margin-top: -15px;
+ 	 		background-color: rgba(0,0,0,.7);
+			padding-bottom: 20px;
  	 	}
 		.col-md-5, .col-sm-5, .col-xs-5 {
-				background-color: rgba(0,0,0,.7);
-				padding-bottom: 20px;
+				
 			}
 			.caption p {
 				margin-bottom: 20px;
@@ -80,9 +81,9 @@
 		#gallery .mySlides {
 			width: 100%;
 			height: auto;
-			margin-left: 15px;
-			margin-top: -15px;
-			margin-right: -5px;
+			// margin-left: 15px;
+			// margin-top: -15px;
+			// margin-right: -5px;
 			// position: absolute;
 			// top: -;
 			.col-md-6, .col-md-5 {
